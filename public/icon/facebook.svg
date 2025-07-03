@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_36" data-name="사각형 36" width="29.377" height="29.306" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(-0.216 -0.361)">
+    <g id="사각형_35" data-name="사각형 35" transform="translate(0.216 0.361)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="50" height="50" rx="10" stroke="none"/>
+      <rect x="1" y="1" width="48" height="48" rx="9" fill="none"/>
+    </g>
+    <g id="facebook" transform="translate(10.912 10.912)">
+      <g id="그룹_10" data-name="그룹 10" clip-path="url(#clip-path)">
+        <path id="패스_91" data-name="패스 91" d="M16.13,29.306V18.851h4.018V15.33H16.13v-2.2a2,2,0,0,1,.684-1.78,2.871,2.871,0,0,1,1.636-.455,10.279,10.279,0,0,1,1.223.063,6.075,6.075,0,0,1,.973.187V7.457a13.474,13.474,0,0,0-3.313-.289,10.631,10.631,0,0,0-2.217.226,4.352,4.352,0,0,0-1.888.915A4.724,4.724,0,0,0,11.9,10.255a9.2,9.2,0,0,0-.494,3.292V15.33H7.886v3.521h3.521V29a14.671,14.671,0,1,1,4.723.308" transform="translate(0 0.001)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

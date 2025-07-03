@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="_2" data-name="2" transform="translate(-0.265 -0.361)">
+    <g id="사각형_35" data-name="사각형 35" transform="translate(0.265 0.361)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="50" height="50" rx="10" stroke="none"/>
+      <rect x="1" y="1" width="48" height="48" rx="9" fill="none"/>
+    </g>
+    <path id="X_logo_2023" d="M22.11,0h4.5L16.726,11.258,28.277,26.529H19.213l-7.1-9.28L3.99,26.529h-4.5L9.962,14.488-1.1,0H8.19L14.6,8.477ZM20.534,23.886h2.5L6.878,2.545H4.2Z" transform="translate(11.592 11.916)" fill="#fff"/>
+  </g>
+</svg>
