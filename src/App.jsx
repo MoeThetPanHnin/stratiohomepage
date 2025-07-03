@@ -137,7 +137,7 @@ function App() {
       <section className="footer">
         <div className="footer-left">
           <img src="/img/STRATIO Logo.png" alt="Stratio Logo" className="footer-logo" />
-          <p>© 2025 STRATIO. All rights reserved.</p>
+          <p className="footer-copyright">© 2025 STRATIO. All rights reserved.</p>
         </div>
         <div className="footer-right">
           <div className="social-icons">
@@ -155,7 +155,21 @@ function App() {
             </a>
           </div>
           <button className="go-top-btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Go to Top">
-            <img src="/icon/arrow-up.svg" alt="Go to Top" />
+          <svg 
+           xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 24 24" fill="currentColor" 
+           class="size-10"
+           strokeWidth={5}
+           strokeDasharray={500}
+          
+           style={{width: '50px', height: '50px'}}>
+           <path
+            fill-rule="evenodd" 
+            d="M11.47 2.47a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06l-6.22-6.22V21a.75.75 0 0 1-1.5 0V4.81l-6.22 6.22a.75.75 0 1 1-1.06-1.06l7.5-7.5Z" 
+            clip-rule="evenodd" />
+          </svg>
+
+
           </button>
         </div>
       </section>
