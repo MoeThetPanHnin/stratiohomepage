@@ -1,5 +1,5 @@
 // src/App.jsx
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import './App.css';
 
@@ -11,9 +11,46 @@ function App() {
     service: 'LinkSquare',
     message: '',
   });
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Custom Dropdown State
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  const serviceOptions = ['LinkSquare', 'BeyonSense', 'STNF'];
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    }
+    if (dropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [dropdownOpen]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleDropdownSelect = (option) => {
+    setFormData({ ...formData, service: option });
+    setDropdownOpen(false);
+  };
+
+  const handleDropdownKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      setDropdownOpen((open) => !open);
+      e.preventDefault();
+    } else if (e.key === 'Escape') {
+      setDropdownOpen(false);
+    }
   };
 
   const handleSubmit = (e) => {
@@ -23,6 +60,30 @@ function App() {
 
   return (
     <div className="app">
+      {/* Menu Overlay */}
+      {menuOpen && (
+        <div className="menu-overlay">
+          <img src="/img/STRATIO Logo.png" alt="Stratio Logo" className="menu-overlay-logo" />
+          <button className="menu-overlay-close" onClick={() => setMenuOpen(false)} aria-label="Close Menu">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="10" y1="10" x2="30" y2="30" stroke="white" strokeWidth="3" strokeLinecap="round" />
+              <line x1="30" y1="10" x2="10" y2="30" stroke="white" strokeWidth="3" strokeLinecap="round" />
+            </svg>
+          </button>
+          <div className="menu-overlay-content">
+            <a href="#about" className="menu-overlay-link">About</a>
+            <a href="#products" className="menu-overlay-link">Products & Services</a>
+            <a href="#news" className="menu-overlay-link">News</a>
+            <a href="#contact" className="menu-overlay-link">Contact</a>
+          </div>
+          <div className="menu-overlay-footer">
+            <div>
+              <span style={{ fontWeight: 'bold' }}>Mail.</span><br />
+              contact@stratiotechnolgy.com
+            </div>
+          </div>
+        </div>
+      )}
       {/* Header */}
       <header className="header">
         <div className="header-left">
@@ -30,7 +91,7 @@ function App() {
         </div>
         <nav className="header-right">
           <span className="menu-text">MENU</span>
-          <span className="menu-icon">
+          <span className="menu-icon" onClick={() => setMenuOpen(true)} style={{ cursor: 'pointer' }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -123,11 +184,40 @@ function App() {
           <label className="required" htmlFor="email">E-mail</label>
           <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required />
           <label className="required" htmlFor="service">Product & Service</label>
-          <select id="service" name="service" value={formData.service} onChange={handleChange} required>
-            <option>LinkSquare</option>
-            <option>BeyonSense</option>
-            <option>STNF</option>
-          </select>
+          {/* Custom Dropdown Start */}
+          <div
+            className={`custom-dropdown${dropdownOpen ? ' open' : ''}`}
+            ref={dropdownRef}
+            tabIndex={0}
+            onClick={() => setDropdownOpen((open) => !open)}
+            onKeyDown={handleDropdownKeyDown}
+            aria-haspopup="listbox"
+            aria-expanded={dropdownOpen}
+            role="button"
+            style={{ outline: 'none' }}
+          >
+            <div className="custom-dropdown-selected">
+              {formData.service}
+              <span className="custom-dropdown-arrow">{dropdownOpen ? '▲' : '▼'}</span>
+            </div>
+            {dropdownOpen && (
+              <ul className="custom-dropdown-list" role="listbox">
+                {serviceOptions.map((option) => (
+                  <li
+                    key={option}
+                    className={`custom-dropdown-option${formData.service === option ? ' selected' : ''}`}
+                    onClick={(e) => { e.stopPropagation(); handleDropdownSelect(option); }}
+                    role="option"
+                    aria-selected={formData.service === option}
+                    tabIndex={-1}
+                  >
+                    {option}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          {/* Custom Dropdown End */}
           <label htmlFor="message">Message</label>
           <textarea id="message" name="message" value={formData.message} onChange={handleChange}></textarea>
           <button type="submit">Send</button>
