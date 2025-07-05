@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
 const products = [
@@ -29,6 +29,10 @@ const products = [
 ];
 
 function ProductsServices() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div style={{ width: '100vw', minHeight: '690px', background: 'black', paddingTop: 90, paddingBottom: 100 }}>
       <div style={{ width: '100vw', margin: 0, padding: 0 }}>

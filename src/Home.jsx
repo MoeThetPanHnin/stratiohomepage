@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import './Home.css';
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -96,15 +97,25 @@ function Home() {
       </section>
 
       {/* Company Logos Section */}
-      <section className="company-logos">
-        <div className="company-logos-row">
-          <img src="/customerlogo/1_Olam_logo_w.svg" alt="Olam" style={{ width: '180px', height: '70px' }} className="company-logo " />
-          <img src="/customerlogo/2_USDA_logo_w.svg" alt="USDA" style={{width: '120px', height: '60px'}} className="company-logo " />
-          <img src="/customerlogo/3_AgResearch_logo_w.svg" alt="AgResearch" style={{width: '180px', height: '80px'}} className="company-logo " />
-          <img src="/customerlogo/4_hortifrut_logo_w.svg" alt="Hortifrut" style={{width: '110px', height: '80px'}} className="company-logo " />
-          <img src="/customerlogo/5_aerobotics_logo_w.svg" alt="Aerobotics" style={{width: '110px', height: '220px'}} className="company-logo" />
-        </div>
-      </section>
+      <section className="partner slide" id="logo-slide-01">
+          <div className="inner">
+            <div className="box"><img src="/customerlogo/1_Olam_logo_w.svg" alt="Olam" /></div>
+            <div className="box"><img src="/customerlogo/2_USDA_logo_w.svg" alt="USDA" /></div>
+            <div className="box"><img src="/customerlogo/3_AgResearch_logo_w.svg" alt="AgResearch" /></div>
+            <div className="box"><img src="/customerlogo/4_hortifrut_logo_w.svg" alt="Hortifrut" /></div>
+            <div className="box"><img src="/customerlogo/5_aerobotics_logo_w.svg" alt="Aerobotics" /></div>
+            <div className="box"><img src="/customerlogo/6_partner_logo.svg" alt="Partner6" /></div>
+            <div className="box"><img src="/customerlogo/7_partner_logo.svg" alt="Partner7" /></div>
+            {/* Duplicate for seamless scroll */}
+            <div className="box"><img src="/customerlogo/1_Olam_logo_w.svg" alt="Olam" /></div>
+            <div className="box"><img src="/customerlogo/2_USDA_logo_w.svg" alt="USDA" /></div>
+            <div className="box"><img src="/customerlogo/3_AgResearch_logo_w.svg" alt="AgResearch" /></div>
+            <div className="box"><img src="/customerlogo/4_hortifrut_logo_w.svg" alt="Hortifrut" /></div>
+            <div className="box"><img src="/customerlogo/5_aerobotics_logo_w.svg" alt="Aerobotics" /></div>
+            <div className="box"><img src="/customerlogo/6_partner_logo.svg" alt="Partner6" /></div>
+            <div className="box"><img src="/customerlogo/7_partner_logo.svg" alt="Partner7" /></div>
+          </div>
+        </section>
 
       {/* Contact Section */}
       <section className="contact">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const newsData = [
@@ -182,6 +182,10 @@ const newsData = [
 
 function News() {
   const [showSecondSet, setShowSecondSet] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Show first 9 or next 16 depending on state
   const visibleNews = showSecondSet
