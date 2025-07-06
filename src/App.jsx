@@ -1,4 +1,4 @@
-// src/App.jsx
+ // src/App.jsx
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import Home from './Home';
@@ -124,16 +124,16 @@ function AppContent() {
           </div>
           <div className="footer-right">
             <div className="social-icons">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="Facebook">
+              <a href="https://www.facebook.com/LinkSquareIR" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="Facebook">
                 <img src="/icon/facebook.svg" alt="Facebook" />
               </a>
-              <a href="https://www.threads.net/" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="Threads">
+              <a href="https://x.com/LinkSquareIR" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="Threads">
                 <img src="/icon/twitter.svg" alt="Threads" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="YouTube">
+              <a href="https://www.youtube.com/@StratioBeyonSenseLinkSquare" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="YouTube">
                 <img src="/icon/youtube.svg" alt="YouTube" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/stratioinc/" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="LinkedIn">
                 <img src="/icon/linkedin.svg" alt="LinkedIn" />
               </a>
             </div>

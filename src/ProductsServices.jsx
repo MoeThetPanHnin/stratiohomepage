@@ -8,7 +8,7 @@ const products = [
     bg: '/products&services/Product%20img_02_2.png',
     desc: "LinkSquare is a smart, handheld spectrometer powered by STRATIO's proprietary Ge-based SWIR spectral sensor. It captures 8-point spectral fingerprints of materials, making advanced analysis accessible anytime, anywhere. From checking food freshness, plastic sorting to verifying product authenticity, LinkSquare enables businesses to make faster, data-driven decisions, powered by AI.",
     highlight: 'LinkSquare is a smart, handheld spectrometer',
-    url: '#'
+    url: 'https://linksquare.io/'
   },
   {
     name: 'BeyonSense',
@@ -16,7 +16,7 @@ const products = [
     bg: '/products&services/product_BeyonSense.png',
     desc: "BeyonSense is the first and only Ge-based SWIR camera for high-resolution infrared imaging. Built on STRATIO's proprietary CMOS-compatible platform, it delivers the performance of traditional InGaAs cameras at a fraction of the size, cost, and power. From autonomous driving to consumer electronics, BeyonSense is redefining what's possible in infrared vision.",
     highlight: 'BeyonSense is making SWIR imaging, finally in your hands',
-    url: '#'
+    url: 'https://beyonsense.io/'
   },
   {
     name: 'STNF',
@@ -24,7 +24,7 @@ const products = [
     bg: '/products&services/product_STNF.png',
     desc: "STNF is STRATIO's in-house nanofabrication facility in Silicon Valley, built to prototype and manufacture next-generation sensor devices, including our world-first Ge SWIR sensors. From concept to chip, bring your ideas to life with STRATIO's proven process. Your innovation, our process, made in California.",
     highlight: 'STRATIO Technology Nanofabrication Facility (STNF)',
-    url: '#'
+    url: 'https://stnf.io/'
   }
 ];
 
@@ -54,7 +54,10 @@ function ProductsServices() {
                 <img src={product.logo} alt={product.name + ' Logo'} style={{ maxWidth: 200, maxHeight: 60, marginBottom: 32 }} />
                 <p style={{ color: '#D5B64C', fontWeight: 700, fontSize: '1.15rem', marginBottom: 16 }}>{product.highlight}</p>
                 <p style={{ color: '#fff', fontSize: '1.08rem', marginBottom: 32, maxWidth: 520 }}>{product.desc}</p>
-                <a href={product.url} className="product-btn" style={{ marginTop: 24, marginBottom: 0, display: 'inline-block' }}>Web Site ↗</a>
+                <a href={product.url} className="product-btn" target="_blank" rel="noopener noreferrer" style={{ marginTop: 24, marginBottom: 0, display: 'inline-block' }}>
+                  <span>Web Site </span>
+                  <img src="/icon/Arrow Outward.svg" alt="Arrow" className="arrow" />
+                </a>
               </div>
             </div>
             <div style={{ flex: 1, minHeight: '100vh', height: '100%', background: `url(${product.bg}) center center / cover no-repeat`, margin: 0, padding: 0 }}></div>

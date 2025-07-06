@@ -73,7 +73,7 @@ function Home() {
             <img src="/img/LinkSquarelogo.png" alt="LinkSquare Logo" className="product-logo" />
             <p className="product-desc">Spectral Insight in the Palm of Your Hand</p>
             <p className="product-detail">LinkSquare is a smart handheld spectrometer powered by STRATIO's Ge-based SWIR spectral sensor. It captures spectral fingerprints across 8 channels among SWIR range to analyze and identify materials in real time, from plastics and fabrics to food and pharmaceuticals</p>
-            <a href="#" className="product-btn">
+            <a href="https://linksquare.io/" className="product-btn" target="_blank" rel="noopener noreferrer">
               <span>Web Site </span>
               <img src="/icon/Arrow Outward.svg" alt="Arrow" className="arrow" />
             </a>
@@ -85,7 +85,7 @@ function Home() {
             <img src="/img/BeyonSenselogo.png" alt="BeyonSense Logo" className="product-logo" />
             <p className="product-desc">Infrared Vision, Redefined</p>
             <p className="product-detail">The only SWIR imaging solution built with STRATIO’s Ge-based image sensor, a breakthrough that redefines what’s possible in infrared vision. From autonomous vehicles to next-generation smartphones, BeyonSense is unlocking entirely new markets where seeing beyond visible means seeing further, safer, and smarter.</p>
-            <a href="#" className="product-btn">
+            <a href="https://beyonsense.io/" className="product-btn" target="_blank" rel="noopener noreferrer">
               <span>Web Site </span>
               <img src="/icon/Arrow Outward.svg" alt="Arrow" className="arrow" />
             </a>
@@ -97,7 +97,7 @@ function Home() {
             <img src="/img/STNFlogo.png" alt="STNF Logo" className="product-logo stnflogo" />
             <p className="product-desc">Your Idea, Our Fab</p>
             <p className="product-detail">STNF is a Lab-to-Fab Foundry that supports startups disrupting the market, research institutions, and large corporations in transitioning from R&D to the commercial foundry production.</p>
-            <a href="#" className="product-btn">
+            <a href="https://stnf.io/" className="product-btn" target="_blank" rel="noopener noreferrer">
               <span>Web Site </span>
               <img src="/icon/Arrow Outward.svg" alt="Arrow" className="arrow" />
             </a>

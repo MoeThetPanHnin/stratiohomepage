@@ -9,62 +9,78 @@
 
 /* Hero Section */
 .about-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: none;
-  padding: 0;
+  background: #000;
+  overflow: hidden;
+  padding: 90px 0 0 0;
 }
 
 .about-hero-content {
   text-align: center;
-  max-width: 900px;
-  margin: 0 auto 2.5rem auto;
-  z-index: 2;
-  position: relative;
-}
-
-.about-hero-bg, .about-company-description {
-  width: 100vw;
-  aspect-ratio: 16/7;
-  background-size: cover;
-  background-position: center bottom;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem 2rem 0;
   position: relative;
-  z-index: 1;
-  overflow: hidden;
-  min-height: unset;
-  height: unset;
-  padding: 0;
+  z-index: 3;
 }
 
 .about-hero-bg {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('/aboutimg/Sensor_img.png');
-}
-
-.about-company-description {
-  background-image: url('/aboutimg/about_stratio.png');
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .about-hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #DAA520;
-  margin-bottom: 3rem;
+  font-family: 'Noto Sans KR';
+  font-size: 40px;
+  font-weight: bold;
+  color: #D5B64C;
+  margin-bottom: 1rem;
   letter-spacing: 0.02em;
 }
 
 .about-hero-description {
-  font-size: 1.3rem;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
   line-height: 1.6;
-  color: #e0e0e0;
-  max-width: 800px;
+  color: #FFFFFF;
+  max-width: 1200px;
+  height: 87px;
   margin: 0 auto;
 }
 
 .about-hero-description p {
   margin-bottom: 0.8rem;
+}
+
+.about-company-description {
+  width: 100vw;
+  aspect-ratio: 16/7;
+  background-size: cover;
+  background-position: center bottom;
+  
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1097px;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  background-image: url('/aboutimg/about_stratio.png');
 }
 
 /* Performance Section */
@@ -75,11 +91,12 @@
 }
 
 .about-performance-title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #fff;
+  font-family: 'Noto Sans KR';  
+  font-size: 40px;
+  font-weight: normal;
+  color: #FFFFFF;
   margin-bottom: 4rem;
-  max-width: 800px;
+  max-width:900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -105,7 +122,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #DAA520;
+  color: #D5B64C;
 }
 
 .about-feature-icon img {
@@ -115,15 +132,18 @@
 }
 
 .about-feature h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 0.8rem;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: normal;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
 }
 
 .about-feature p {
-  font-size: 1.1rem;
-  color: #ccc;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: normal;
+  color: #FFFFFF;
   line-height: 1.5;
 }
 
@@ -140,24 +160,37 @@
 }
 
 .about-company-desc-text {
-  font-size: 1.3rem;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0px;
   line-height: 1.7;
-  color: #e0e0e0;
+  color: #FFFFFF;
   text-align: center;
-  margin: 0 auto 2.5rem auto;
-  max-width: 900px;
+  margin: 0 auto 0 auto;
+  margin-bottom: 0q;
+  max-width: 1268px;
+  height: 87px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.7);
   background: rgba(0,0,0,0.15);
-  padding: 1.2rem 2rem;
+  padding: 1rem 1rem;
   border-radius: 8px;
 }
 
 .about-company-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #DAA520;
+  font-family: 'Noto Sans KR';
+  font-size: 40px;
+  font-weight: bold;
+  color: #D5B64C;
   margin-bottom: 3rem;
   margin-top: 3rem;
+}
+
+.about-company-description {
+  width: 100vw;
+  aspect-ratio: 16/7;
+  background-size: cover;
+  background-position: center bottom;
 }
 
 /* CEO Section */
@@ -172,9 +205,10 @@
 }
 
 .about-ceo-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #DAA520;
+  font-family: 'Noto Sans KR';
+  font-size: 40px;
+  font-weight: bold;
+  color: #D5B64C;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -228,7 +262,7 @@
 .about-ceo-divider {
   width: 50px;
   height: 3px;
-  background: #DAA520;
+  background: #D5B64C;
   margin-bottom: 1.5rem;
 }
 
@@ -242,7 +276,7 @@
 }
 
 .phd-badge {
-  background: #DAA520;
+  background: #D5B64C;
   color: #000;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
@@ -273,8 +307,7 @@
 }
 
 .linkedin-icon:hover {
- 
-  background: #DAA520;
+  background: #D5B64C;
 }
 
 .linkedin-icon img {
