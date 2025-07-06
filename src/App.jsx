@@ -30,6 +30,7 @@ function AppContent() {
         {/* Menu Overlay */}
         {menuOpen && (
           <div className="menu-overlay">
+            <div className="menu-overlay-header">
             <img 
               src="/img/STRATIO Logo.png" 
               alt="Stratio Logo" 
@@ -43,6 +44,7 @@ function AppContent() {
                 <line x1="30" y1="10" x2="10" y2="30" stroke="white" strokeWidth="3" strokeLinecap="round" />
               </svg>
             </button>
+            </div>
             <div className="menu-overlay-content">
               <Link to="/about" className="menu-overlay-link" onClick={() => setMenuOpen(false)}>About</Link>
               <Link to="/products" className="menu-overlay-link" onClick={() => setMenuOpen(false)}>Products & Services</Link>
@@ -136,18 +138,7 @@ function AppContent() {
               </a>
             </div>
             <button className="go-top-btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Go to Top">
-              <svg 
-               xmlns="http://www.w3.org/2000/svg"
-               viewBox="0 0 24 24" fill="currentColor" 
-               className="size-10"
-               strokeWidth={5}
-               strokeDasharray={500}
-               style={{width: '50px', height: '50px'}}>
-               <path
-                fillRule="evenodd" 
-                d="M11.47 2.47a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06l-6.22-6.22V21a.75.75 0 0 1-1.5 0V4.81l-6.22 6.22a.75.75 0 1 1-1.06-1.06l7.5-7.5Z" 
-                clipRule="evenodd" />
-              </svg>
+              <img src="/icon/Top.svg" alt="Go to Top" style={{ width: 44, height: 44 }} />
             </button>
           </div>
         </section>

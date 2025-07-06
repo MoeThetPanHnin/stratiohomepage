@@ -3,7 +3,7 @@
 body, html, #root, .app {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans KR';
   background-color: black;
   color: white;
   width: 100vw;
@@ -60,6 +60,7 @@ body, html, #root, .app {
   display: block;
   background: transparent url('./public/img/STRATIO Logo.png') 0% 0% no-repeat padding-box;
   opacity: 1;
+  cursor: pointer;
 }
 
 .header-center {
@@ -86,7 +87,20 @@ body, html, #root, .app {
   padding-right: 3vw;
 }
 
-.menu-btn {
+.menu-text {
+  top: 35px;
+  left: 1703px;
+  width: 44px;
+  height: 21px;
+  text-align: center;
+  font: normal normal 600 15px/21px Noto Sans KR;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  
+}
+
+/*.menu-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -105,28 +119,34 @@ body, html, #root, .app {
 .menu-btn:hover {
   background: rgba(255,255,255,0.08);
 }
+*/
 
 .menu-icon {
+  top: 30px;
+  left: 1752px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   margin-left: 0.5rem;
 }
 
-.menu-btn:focus {
+/*.menu-btn:focus {
   outline: 2px solid #fff;
 }
+*/
 
 /* Contact Section */
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 4rem 4vw 4rem 6vw;
+  padding: 2rem 4vw 4rem 6vw;
   gap: 2rem;
   background-color: black;
   color: white;
   max-width: 100vw;
   box-sizing: border-box;
-  margin-top: 90px;
+  margin-top: 10px;
   margin-bottom: 100px;
 }
 
@@ -148,10 +168,14 @@ body, html, #root, .app {
 }
 
 .contact-info h2 {
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-  color: gold;
+  margin-bottom: 1.5rem;
   font-weight: bold;
+  text-align: left;
+  font: normal normal bold 30px/45px Noto Sans KR;
+  letter-spacing: 0px;
+  color: #D5B64C;
+  opacity: 1;
+  margin-top: 0;
 }
 
 .contact-info p {
@@ -297,29 +321,37 @@ button[type="submit"]:hover {
 }
 
 .go-top-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #dad5d5;
+  width: 44px;
+  height: 44px;
+  background: none;
   border: none;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
   transition: background 0.2s;
   cursor: pointer;
   position: relative;
+  z-index: 200;
+  box-shadow: none;
+  outline: none;
+}
+.go-top-btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 .go-top-btn img {
-  width: 38px;
-  height: 38px;
-  filter: invert(1);
+  width: 44px;
+  height: 44px;
+  filter: invert(0);
+
 }
 .go-top-btn:hover {
-  background: #fff;
+  background: none;
 }
 .go-top-btn:hover img {
-  filter: invert(0);
+  filter: invert(1);
 }
 
 /* Custom Dropdown Styles (shared) */
@@ -404,37 +436,55 @@ button[type="submit"]:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  animation: fadeIn 0.2s;
+  animation: fadeIn 0.3s;
 }
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+.menu-overlay-header {
+  width: 100vw;
+  max-width: 100vw;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+  border-bottom: 1px solid #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000000 0% 0% no-repeat padding-box;
+  z-index: 100;
+}
 .menu-overlay-logo {
-  position: absolute;
-  top: 2.5rem;
-  left: 2.5rem;
-  width: 180px;
+  width: 230px;
   height: 18px;
-  object-fit: contain;
-  z-index: 1001;
+  display: block;
+  background: transparent url('./public/img/STRATIO Logo.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  cursor: pointer;
+  position: static;
+  margin: 0;
 }
 .menu-overlay-close {
   position: absolute;
-  top: 2rem;
-  right: 2.5rem;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
   padding: 0;
   margin-right: 2.5rem;
-  width: 48px;
-  height: 48px;
-  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1002;
+  top: 30px;
+  left: 1752px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
 }
 .menu-overlay-content {
   flex: 1;

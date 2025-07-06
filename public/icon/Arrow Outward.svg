@@ -1,0 +1,9 @@
+<svg id="Arrow_Outward" data-name="Arrow Outward" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="그룹_39" data-name="그룹 39">
+    <rect id="사각형_79" data-name="사각형 79" width="30" height="30" fill="none"/>
+    <rect id="사각형_80" data-name="사각형 80" width="30" height="30" fill="none"/>
+  </g>
+  <g id="그룹_40" data-name="그룹 40" transform="translate(8.264 9.153)">
+    <path id="패스_416" data-name="패스 416" d="M6,7H6A1,1,0,0,0,7,8h7.59L5.71,16.88a1,1,0,0,0,0,1.41h0a1,1,0,0,0,1.41,0L16,9.41V17a1,1,0,0,0,1,1h0a1,1,0,0,0,1-1V7a1,1,0,0,0-1-1H7A1,1,0,0,0,6,7Z" transform="translate(-5.418 -6)" fill="#fff"/>
+  </g>
+</svg>
