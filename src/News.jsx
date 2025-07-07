@@ -202,7 +202,7 @@ function News() {
         </div>
         {/* View More button */}
         {!showSecondSet && (
-          <div style={{ textAlign: 'center', margin: '3rem 0 0 0' }}>
+          <div style={{ textAlign: 'center', margin: '2rem 0 3rem 0' }}>
             <button
               className="view-more-btn"
               onClick={() => setShowSecondSet(true)}

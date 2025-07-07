@@ -7,10 +7,17 @@
   padding-bottom: 100px; /* Account for fixed footer */
 }
 
+@media (max-width: 768px) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
 /* Hero Section */
 .about-hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,6 +26,16 @@
   background: #000;
   overflow: hidden;
   padding: 90px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: auto;
+    padding: 80px 0 4rem 0;
+  }
+  .about-hero-bg {
+    display: none;
+  }
 }
 
 .about-hero-content {
@@ -88,6 +105,12 @@
   padding: 6rem 2rem;
   background: #000;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-performance {
+    padding: 4rem 2rem;
+  }
 }
 
 .about-performance-title {
@@ -187,10 +210,16 @@
 }
 
 .about-company-description {
-  width: 100vw;
+  width: 100%;
   aspect-ratio: 16/7;
   background-size: cover;
   background-position: center bottom;
+}
+
+@media (max-width: 768px) {
+  .about-company-description {
+    height: 400px;
+  }
 }
 
 /* CEO Section */
@@ -229,15 +258,30 @@
 }
 
 .about-ceo-profile {
-  width:1345px;
+  width:100%;
+  max-width: 1345px;
   height: 480px;
   display: flex;
   gap: 3rem;
   align-items: flex-start;
   margin-bottom: 3rem;
   background: #1a1a1a;
- 
- 
+}
+
+@media (max-width: 1024px) {
+  .about-ceo-profile {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .about-ceo-image {
+    width: 100%;
+    height: auto;
+  }
+  .about-ceo-image img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .about-ceo-image {
@@ -505,5 +549,189 @@
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+  }
+}
+
+/* Hero Section Media Queries */
+@media (max-width: 1200px) {
+  .about-hero-content {
+    max-width: 90%;
+    padding: 2rem 1rem 0;
+  }
+  
+  .about-hero-title {
+    font-size: 36px;
+  }
+  
+  .about-hero-description {
+    font-size: 18px;
+    height: auto;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: auto;
+    min-height: 60vh;
+    padding: 80px 0 4rem 0;
+  }
+  
+  .about-hero-title {
+    font-size: 32px;
+  }
+  
+  .about-hero-description {
+    font-size: 16px;
+  }
+}
+
+/* Performance Section Media Queries */
+@media (max-width: 1200px) {
+  .about-performance {
+    padding: 4rem 1.5rem;
+  }
+  
+  .about-performance-title {
+    font-size: 36px;
+    max-width: 90%;
+  }
+  
+  .about-features {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-performance {
+    padding: 3rem 1rem;
+  }
+  
+  .about-performance-title {
+    font-size: 28px;
+    margin-bottom: 3rem;
+  }
+  
+  .about-features {
+    gap: 2rem;
+  }
+}
+
+/* Company Section Media Queries */
+@media (max-width: 1200px) {
+  .about-company-desc-text {
+    font-size: 18px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .about-company-title {
+    font-size: 36px;
+  }
+  
+  .about-company-description {
+    height: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-company-desc-text {
+    font-size: 16px;
+    padding: 1rem;
+  }
+  
+  .about-company-title {
+    font-size: 28px;
+    margin: 2rem 0;
+  }
+}
+
+/* CEO Section Media Queries */
+@media (max-width: 1200px) {
+  .about-ceo-content {
+    max-width: 90%;
+  }
+  
+  .about-ceo-title {
+    font-size: 36px;
+  }
+  
+  .about-ceo-subtitle {
+    font-size: 18px;
+    height: auto;
+    max-width: 90%;
+  }
+  
+  .about-ceo-profile {
+    height: auto;
+    gap: 2rem;
+  }
+  
+  .about-ceo-image,
+  .about-ceo-image img {
+    width: 350px;
+    height: 400px;
+  }
+  
+  .about-ceo-bio {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-ceo-profile {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  
+  .about-ceo-image,
+  .about-ceo-image img {
+    width: 100%;
+    max-width: 435px;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  
+  .about-ceo-info {
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-ceo {
+    padding: 2rem 1rem;
+  }
+  
+  .about-ceo-title {
+    font-size: 28px;
+  }
+  
+  .about-ceo-subtitle {
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+  
+  .about-ceo-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .phd-badge {
+    font-size: 16px;
+  }
+  
+  .about-ceo-bio {
+    font-size: 16px;
+  }
+}
+
+/* Button Media Queries */
+@media (max-width: 768px) {
+  .our-crew-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    padding: 0.8rem 2rem;
   }
 } 

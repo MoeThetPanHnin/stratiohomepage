@@ -84,7 +84,7 @@ function Home() {
           <div className="product-overlay">
             <img src="/img/BeyonSenselogo.png" alt="BeyonSense Logo" className="product-logo" />
             <p className="product-desc">Infrared Vision, Redefined</p>
-            <p className="product-detail">The only SWIR imaging solution built with STRATIO’s Ge-based image sensor, a breakthrough that redefines what’s possible in infrared vision. From autonomous vehicles to next-generation smartphones, BeyonSense is unlocking entirely new markets where seeing beyond visible means seeing further, safer, and smarter.</p>
+            <p className="product-detail">The only SWIR imaging solution built with STRATIO's Ge-based image sensor, a breakthrough that redefines what's possible in infrared vision. From autonomous vehicles to next-generation smartphones, BeyonSense is unlocking entirely new markets where seeing beyond visible means seeing further, safer, and smarter.</p>
             <a href="https://beyonsense.io/" className="product-btn" target="_blank" rel="noopener noreferrer">
               <span>Web Site </span>
               <img src="/icon/Arrow Outward.svg" alt="Arrow" className="arrow" />
@@ -119,7 +119,7 @@ function Home() {
             <div className="box"><img src="/customerlogo/9_biolumic_logo_w.png" alt="Biolumic" /></div>
             <div className="box"><img src="/customerlogo/10_libios_logo_w.svg" alt="Libios" /></div>
             <div className="box"><img src="/customerlogo/11_cornell university_logo_w.png" alt="Cornell University" /></div>
-            <div className="box"><img src="/customerlogo/12_Illinois_logo_w.svg" alt="Illinois" /></div>
+            <div className_="box"><img src="/customerlogo/12_Illinois_logo_w.svg" alt="Illinois" /></div>
             <div className="box"><img src="/customerlogo/13_UCLA_logo_w.svg" alt="UCLA" /></div>
             <div className="box"><img src="/customerlogo/14_Kennesaw State Owls university_logo_w.png" alt="Kennesaw State University" /></div>
             <div className="box"><img src="/customerlogo/15_Florida_International_University_logo_w.svg" alt="Florida International University" /></div>
@@ -253,4 +253,5 @@ function Home() {
   );
 }
 
-export default Home; 
+export default Home;
+ 

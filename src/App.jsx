@@ -1,4 +1,4 @@
- // src/App.jsx
+// src/App.jsx
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
 import Home from './Home';
@@ -79,39 +79,43 @@ function AppContent() {
             {isContactPage && <span className="header-about-text" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>Contact</span>}
           </div>
           <nav className="header-right">
-            <span className="menu-text">MENU</span>
-            <span className="menu-icon" onClick={() => setMenuOpen(true)} style={{ cursor: 'pointer' }}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="white"
-                width={32}
-                height={32}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </span>
+            <button className="menu-btn" onClick={() => setMenuOpen(true)} aria-label="Open Menu">
+              <span className="menu-text">MENU</span>
+              <span className="menu-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="white"
+                  width={32}
+                  height={32}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </span>
+            </button>
           </nav>
         </header>
 
         {/* Routes */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/ourcrew" element={<OurCrew />} />
-          <Route path="/products" element={<ProductsServices />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <main style={{ flex: 1 }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/ourcrew" element={<OurCrew />} />
+            <Route path="/products" element={<ProductsServices />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
 
         {/* Footer */}
-        <section className="footer">
+        <footer className="footer">
           <div className="footer-left">
             <img 
               src="/img/STRATIO Logo.png" 
@@ -141,9 +145,7 @@ function AppContent() {
               <img src="/icon/Top.svg" alt="Go to Top" style={{ width: 44, height: 44 }} />
             </button>
           </div>
-        </section>
-
-        
+        </footer>
       </div>
   );
 }
