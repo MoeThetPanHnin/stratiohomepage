@@ -1,0 +1,295 @@
+/* OurCrew.css */
+.ourcrew-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 2rem 100px;
+}
+
+.ourcrew-section-title {
+  font-family: 'Noto Sans KR';
+  color: #D5B64C;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 2.5rem 0;
+}
+
+.crew-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crew-card {
+  background: #2F2F2F;
+  padding: 2rem 1.5rem 2.5rem;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  max-width: 370px;
+  border-radius: 8px;
+}
+
+.crew-card-img-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.crew-card-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: #111;
+  display: block;
+  transition: filter 0.2s;
+}
+
+.crew-card-name {
+  font-family: 'Noto Sans KR';
+  font-size: 30px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 0.5rem 0;
+}
+.crew-card-underline {
+  color: #D5B64C;
+  height: 4px;
+  width: 50px;
+  margin: 0.5rem auto 1rem auto;
+  background: #D5B64C;
+  border-radius: 5px;
+}
+.crew-card-role {
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+}
+.crew-card-degree {
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  padding: 0.2em 0.7em;
+  font-weight: 600;
+  margin-right: 8px;
+  display: inline-block;
+  font-size: 20px;
+}
+.crew-card-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  font-size: 15px;
+  font-family: 'Noto Sans KR';
+  color: #D9D9D9;
+  margin-top: 1rem;
+  text-align: left;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.crew-card-details > div {
+  flex: 1;
+  min-width:193px ;
+}
+.crew-card-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Simplified Arrow Outward hover effect - just white arrow, no border */
+.crew-card-linkedin-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 2;
+}
+
+.crew-card:hover .crew-card-linkedin-arrow {
+  opacity: 1;
+}
+
+.crew-card-linkedin-arrow img {
+  width: 36px;
+  height: 36px;
+  filter: brightness(0.5) invert(1); /* Make arrow white */
+}
+
+.crew-card-linkedin-arrow:hover {
+  background: transparent;
+}
+
+.crew-card-linkedin-arrow:hover img {
+  filter: brightness(0) invert(1); /* Keep arrow white on hover */
+}
+
+/* Darken crew image on hover */
+.crew-card:hover .crew-card-img {
+  filter: brightness(0.7);
+  transition: filter 0.2s;
+}
+
+.employee-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.employee-card {
+  background: #2F2F2F;
+  
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  width:420px;
+  height:250px;
+  margin-right: 7px;
+}
+
+.employee-card .crew-card-name {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  margin-top: 45px;
+}
+
+.employee-card .crew-card-role {
+  margin: 0 0 0.5rem;
+}
+
+.employee-card .crew-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.employee-card .crew-card-details img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Force CSS refresh */
+.advisor-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+} 
+
+.advisor-card {
+  background: #2F2F2F;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  
+  max-width: 435px;
+  height: 280px;
+}
+
+.advisor-card .crew-card-name {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  margin-top: 30px;
+}
+
+.advisor-card .crew-card-underline {
+  color: #D5B64C;
+  height: 4px;
+  width: 50px;
+  margin: 0.5rem auto 1rem auto;
+  background: #D5B64C;
+  border-radius: 5px;
+}
+
+.advisor-card .crew-card-role {
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+}
+
+.advisor-card .crew-card-degree {
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  padding: 0.2em 0.7em;
+  font-weight: 600;
+  margin-right: 8px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.advisor-card .crew-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.advisor-card .crew-card-details img {
+  height: 40px;
+  object-fit: contain;
+}
+
+.advisor-card .crew-card-details div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.advisor-card .crew-card-details div img {
+  height: 30px;
+  object-fit: contain;
+}
+
+@media (max-width: 1100px) {
+  .advisor-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .advisor-cards {
+    grid-template-columns: 1fr;
+  }
+  .advisor-card {
+    max-width: 400px;
+  }
+} 

@@ -195,7 +195,7 @@
 
 /* CEO Section */
 .about-ceo {
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
   background: #000;
 }
 
@@ -214,42 +214,53 @@
 }
 
 .about-ceo-subtitle {
-  font-size: 1.2rem;
-  color: #ccc;
+  font-family: 'Noto Sans KR';
+  font-weight: normal;
+  font-size: 20px;
+  color: #FFFFFF;
   text-align: center;
   margin-bottom: 4rem;
-  max-width: 800px;
+  max-width: 1000px;
+  height: 29px;
   margin-left: auto;
   margin-right: auto;
+  letter-spacing: 0px;
+  opacity: 1;
 }
 
 .about-ceo-profile {
+  width:1345px;
+  height: 480px;
   display: flex;
   gap: 3rem;
   align-items: flex-start;
   margin-bottom: 3rem;
   background: #1a1a1a;
-  padding: 2rem;
-  border-radius: 8px;
+ 
+ 
 }
 
 .about-ceo-image {
   flex-shrink: 0;
-  width: 300px;
-  height: 400px;
+  width: 435px;
+  height: 480px;
   overflow: hidden;
-  border-radius: 8px;
+  background: #000;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .about-ceo-image img {
-  width: 100%;
-  height: 100%;
+  width: 435px;
+  height: 480px;
   object-fit: cover;
+  border: none;
+  background: none;
 }
 
 .about-ceo-info {
   flex: 1;
-  padding-left: 2rem;
+  padding-left: 0.5rem;
 }
 
 .about-ceo-info h3 {
@@ -276,19 +287,29 @@
 }
 
 .phd-badge {
-  background: #D5B64C;
-  color: #000;
+  background:none;
+  color: #FFFFFF;
   padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 600;
+  border-radius: 15px;
+  border: 1px solid #FFFFFF;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  opacity: 1;
 }
 
 .about-ceo-bio {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #e0e0e0;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #D9D9D9;
+  opacity: 1;
   margin-bottom: 2rem;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .about-ceo-social {
@@ -297,27 +318,19 @@
 }
 
 .linkedin-icon {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
   transition: all 0.3s ease;
+  opacity: 1;
 }
 
 .linkedin-icon:hover {
-  background: #D5B64C;
-}
-
-.linkedin-icon img {
-  width: 24px;
-  height: 24px;
-  filter: invert(0);
-}
-
-.linkedin-icon:hover img {
-  filter: invert(0);
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .about-ceo-button {
@@ -325,12 +338,15 @@
 }
 
 .our-crew-btn {
+  width:250px;
+  height: 60px;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
   color: #fff;
   padding: 1rem 2.5rem;
-  border-radius: 2rem;
-  font-size: 1.1rem;
+  border-radius: 30px;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -339,6 +355,7 @@
 .our-crew-btn:hover {
   background: #fff;
   color: #000;
+  border:none;
 }
 
 /* Responsive Design */

@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import './App.css';
+import './ProductsServices.css';
 
 const products = [
   {
     name: 'LinkSquare',
     logo: '/img/LinkSquarelogo.png',
     bg: '/products&services/Product%20img_02_2.png',
-    desc: "LinkSquare is a smart, handheld spectrometer powered by STRATIO's proprietary Ge-based SWIR spectral sensor. It captures 8-point spectral fingerprints of materials, making advanced analysis accessible anytime, anywhere. From checking food freshness, plastic sorting to verifying product authenticity, LinkSquare enables businesses to make faster, data-driven decisions, powered by AI.",
+    desc: "powered by STRATIO's proprietary Ge-based SWIR spectral sensor. It captures 8-point spectral fingerprints of materials, making advanced analysis accessible anytime, anywhere. From checking food freshness, plastic sorting to verifying product authenticity, LinkSquare enables businesses to make faster, data-driven decisions, powered by AI.",
     highlight: 'LinkSquare is a smart, handheld spectrometer',
     url: 'https://linksquare.io/'
   },
@@ -39,28 +40,20 @@ function ProductsServices() {
         {products.map((product, idx) => (
           <section
             key={product.name}
-            style={{
-              display: 'flex',
-              flexDirection: idx % 2 === 0 ? 'row' : 'row-reverse',
-              alignItems: 'stretch',
-              minHeight: '100vh',
-              width: '100vw',
-              margin: 0,
-              padding: 0,
-            }}
+            className="product-section"
           >
             <div style={{ flex: 1, background: 'black', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', margin: 0, padding: 0 }}>
               <div style={{ maxWidth: 500, width: '100%', margin: 0, padding: 0 }}>
                 <img src={product.logo} alt={product.name + ' Logo'} style={{ maxWidth: 200, maxHeight: 60, marginBottom: 32 }} />
-                <p style={{ color: '#D5B64C', fontWeight: 700, fontSize: '1.15rem', marginBottom: 16 }}>{product.highlight}</p>
-                <p style={{ color: '#fff', fontSize: '1.08rem', marginBottom: 32, maxWidth: 520 }}>{product.desc}</p>
+                <p style={{ color: '#D5B64C', fontFamily: 'Noto Sans KR', fontWeight: 600, fontSize: '20px', marginBottom: 16 , minWidth: '600px' }}>{product.highlight}</p>
+                <p style={{ color: '#D9D9D9', fontFamily: 'Noto Sans KR', fontSize: '20px', marginBottom: 32, minWidth: '600px', lineHeight: '1.5' }}>{product.desc}</p>
                 <a href={product.url} className="product-btn" target="_blank" rel="noopener noreferrer" style={{ marginTop: 24, marginBottom: 0, display: 'inline-block' }}>
-                  <span>Web Site </span>
+                  <span style={{ fontFamily: 'Noto Sans KR', fontSize: '20px', fontWeight: '600' }}>Web Site </span>
                   <img src="/icon/Arrow Outward.svg" alt="Arrow" className="arrow" />
                 </a>
               </div>
             </div>
-            <div style={{ flex: 1, minHeight: '100vh', height: '100%', background: `url(${product.bg}) center center / cover no-repeat`, margin: 0, padding: 0 }}></div>
+            <div className="product-bg" style={{ backgroundImage: `url(${product.bg})` }}></div>
           </section>
         ))}
       </div>

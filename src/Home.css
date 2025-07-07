@@ -193,7 +193,7 @@
 .partner.slide .inner {
   display: flex;
   width: max-content;
-  animation: partner-marquee 40s linear infinite;
+  animation: partner-marquee 90s linear infinite;
 }
 .partner.slide .box {
   display: flex;

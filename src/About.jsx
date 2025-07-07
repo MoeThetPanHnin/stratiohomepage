@@ -84,8 +84,8 @@ function About() {
                 semiconductor solutions that are shaping the future of Infrared AI devices.
               </p>
               <div className="about-ceo-social">
-                <a href="#" className="linkedin-icon" aria-label="LinkedIn">
-                  <img src="/icon/linkedin.svg" alt="LinkedIn" />
+                <a href="https://www.linkedin.com/in/jaehyung-james-lee-6b815616/" target="_blank" rel="noopener noreferrer" className="linkedin-icon" aria-label="LinkedIn">
+                  <img src="/aboutimg/LinkedIn.png" alt="LinkedIn" />
                 </a>
               </div>
             </div>
@@ -93,7 +93,12 @@ function About() {
           
           <div className="about-ceo-button">
             <Link to="/ourcrew">
-              <button className="our-crew-btn">Our Crew →</button>
+              <button className="our-crew-btn">
+                Our Crew
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" style={{width: '28px', height: '28px', marginLeft: '10px', verticalAlign: 'middle'}}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
             </Link>
           </div>
         </div>

@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import NewsCard from './components/NewsCard';
 
 const newsData = [
   {
-    img: '/news/newsimg/[2023.09.17] post.png',
-    title: 'ME Commons Hubs Officially Unveiled: Stratio Proudly',
+    img: '/news/newsimg/[2023.09.20] post.png',
+    title: 'ME Commons Hubs Officially Unveiled: Stratio Proudly ',
     desc: 'Under the CHIPS and Science Act, the Defense Department today announced the award of nearly $240 million dollars to eight regional "innovation hubs" around the United States which will be a part of',
     date: 'September 20, 2023',
     url: '/newshtml/[2023.09.17] news.html',
   },
   {
-    img: '/news/newsimg/[2022.12.19] post.png',
+    img: '/news/newsimg/[2022.12.15] post.png',
     title: "Stratio and South Korea's National IIT Industry",
     desc: 'SAN JOSE, Calif., Dec. 15, 2022 (GLOBE NEWSWIRE) -- Stratio, Inc., an AI and sensor company that creates proprietary infrared technology to enhance public safety, today announced its collaboration with',
     date: 'December 15, 2022',
     url: '/newshtml/[2022.12.19] news.html',
   },
   {
-    img: '/news/newsimg/[2023.01.06] post.png',
+    img: '/news/newsimg/[2022.11.15] post.png',
     title: 'SPIE announces finalists for 2023 Prism Awards',
     desc: "BELLINGHAM, Washington, USA — Cutting-edge technologies and companies ranging from exciting and emerging startups to longtime industry stalwarts are among this year's finalists for the SPIE Prism",
     date: 'November 15, 2022',
@@ -45,7 +46,7 @@ const newsData = [
     url: '#',
   },
   {
-    img: '/news/newsimg/[2018.01.05] post.png',
+    img: '/news/newsimg/[2019.04.17] post.png',
     title: 'LinkSquare is a Handheld Infrared Scanner That',
     desc: 'In addition to traveling really fast and keeping us from stumbling over things in the dark, light is a pretty effective tool in the food supply chain. Stratio is putting light into the hands of people with',
     date: 'April 17, 2019',
@@ -102,80 +103,80 @@ const newsData = [
     url: '#',
   },
   {
-    img: '/news/newsimg/[2017.01.09] post.png',
+    img: '/news/newsimg/[2018.01.05] post.png',
     title: 'GADGETS Here Comes CES 2018, the Biggest Gadget',
     desc: 'In just a few days, upwards of 175,000 industry insiders, exhibitors, and members of the media will once again descend upon Las Vegas for whats known far and wide as the Consumer Electronics Sh... in.',
+    date: 'January 05, 2018',
+    url: '#',
+  },
+  {
+    img: '/news/newsimg/[2017.01.09] post.png',
+    title: '10 ingenious smart devices built by startups at CES 2017',
+    desc: 'The corporations at CES may have had the bigger halls, but the Eureka Park shone just as bright on the little guys. Here why. As a first-timer to...',
     date: 'January 09, 2017',
     url: '#',
   },
   {
     img: '/news/newsimg/[2017.01.06] post.png',
-    title: '10 ingenious smart devices built by startups at CES 2017',
-    desc: 'The corporations at CES may have had the bigger halls, but the Eureka Park shone just as bright on the little guys. Here why. As a first-timer to...',
-    date: 'January 06, 2017',
-    url: '#',
-  },
-  {
-    img: '/news/newsimg/[2017.01.05B] post.png',
     title: "TechCrunch's Hardware Battlefield finalists are",
     desc: 'Over the past two days, 13 startups have taken the stage at TechCrunchs Hardware Battlefield. Now our editorial...',
     date: 'January 06, 2017',
     url: '#',
   },
   {
-    img: '/news/newsimg/[2017.01.05A] post.png',
+    img: '/news/newsimg/[2017.01.05B] post.png',
     title: "Stratio's portable spectroscope can tell what",
     desc: 'To the untrained eye, most pills tend to look the same, but, even to the trained eye, differences can be slight...',
     date: 'January 05, 2017',
     url: '#',
   },
   {
-    img: '/news/newsimg/[2022.11.25] post.png',
+    img: '/news/newsimg/[2017.01.05A] post.png',
     title: 'Meet the startups participating in Hardware',
     desc: 'We are thrilled to introduce the participants in the Hardware Battlefield 2017. These startups represent what...',
-    date: 'November 25, 2022',
+    date: 'January 05, 2017',
     url: '#',
   },
   {
-    img: '/news/newsimg/[2022.11.10] post.png',
+    img: '/news/newsimg/[2023.09.17] post.png',
     title: 'CEO Interview-The Power of Debates in Silicon Valley:',
     desc: '"시리즈 A 시드들의 토론의 힘에 대해 실리콘 밸리 이민자의 역사 말해',
-    date: 'November 10, 2022',
+    date: 'September 17, 2023',
+    url: '#',
+  },
+  {
+    img: '/news/newsimg/[2023.01.06] post.png',
+    title: 'Stratio CEO of Korean companies in Silicon Valley,',
+    desc: '"“숙제 푸는 데 8년이 걸렸네요.” 세계 최초로 게르마늄(Germanium)을 활용한 호환 단파 적외선(SWIR) 카메라 센서 ‘비욘센스(BeyonSense)를 최근 출시한 스트라티오(Stratio) 이제형 대표는 “큰 짐을 덜어낸 것 같다”며 무엇보다 “다양한 산업에 적용시킬 수 있는 확장성에 보람을 느낀다”고 힘주어 말한다.',
+    date: 'January 06, 2023',
     url: '#',
   },
   {
     img: '/news/newsimg/[2023.01.01] post.png',
-    title: 'Stratio CEO of Korean companies in Silicon Valley,',
-    desc: '"속성 컨설턴트들이 실리콘 밸리뽑아낸 팀을 연영스터(PaperSense)를 해 줄 것',
-    date: 'January 01, 2023',
-    url: '#',
-  },
-  {
-    img: '/news/newsimg/[2022.11.10] post.png',
     title: 'Stratio CEO TV interview by The Korea Economic TV "We',
     desc: '"Infrared imaging technology has long been too expensive, complicated and bulky for the general public to benefit from.',
-    date: 'January 01, 2023',
+    date: 'January 01, 2024',
     url: '#',
   },
   {
-    img: '/news/newsimg/[2022.11.25] post.png',
+    img: '/news/newsimg/[2022.12.19] post.png',
     title: 'Stratio, a Promising Start-Up in Silicon Valley, Unveils the',
-    desc: '(본벤처스는리젠저) 실리콘 밸리의 희귀 스타트업 중 하나인 실리콘밸리의 저려기 개발회사로 자리를 단단히 자잡았다.',
+    desc: '(샌프란시스코=연합뉴스) 김태종 특파원 = 미국 실리콘밸리에 있는 한국 스타트업이 기존 제품보다 훨씬 작고 10배 이상 저렴한 적외선 카메라를 개발했다.',
     date: 'December 19, 2022',
     url: '#',
   },
   {
-    img: '/news/[2023.01.01] post.png',
+    img: '/news/newsimg/[2022.11.25] post.png',
     title: 'Stratio Korea Has Been Selected to Develop "AI',
-    desc: '스마티아오스지터디 인프라측정신학기술올(NINPAG) AI 성명 발전 센팅그 프로젝트, 시산화 사업덕 선정과 2023영회기 기 선명 더 창만기금드로 창 광잔다.',
+    desc: '스트라티오코리아가 정보통신산업진흥원(NIPA)의 ‘AI 융합 불법 복제품 판독시스템’ 사업에 선정되어 2023년까지 AI 기술 개발을 진행한다고 25일 밝혔다',
     date: 'November 25, 2022',
     url: '#',
   },
   {
-    img: '/news/[2022.11.10] post.png',
-    title: 'K-Startup, Stratio and Doda, Proved Their Potential...by',
-    desc: '인후동보신고협북합회(NINPAG) 자선 공정선경시설자가 제국 실용성덕들 크기 를 나티스마 시너다엑만다이여 적 된 딕장혹시 오리기의 성적.',
-    date: 'January 01, 2023',
+    img: '/news/newsimg/[2022.11.10] post.png',
+    title: 'K-Startup, Stratio and Doda, Proved Their Potential…by',
+    desc: '정보통신산업진흥원(NIPA)은 지난 8일(현지시각) 미국 실리콘밸리 국가별 스타트업 지원센터연합IIA에서 열린 피칭대회(I-피치)에서 한국 스타트업 도다마인드와 스트라티오코리아가 각각 1등과 3등을 차지했다고 밝혔다.',
+    date: 'November 10, 2022',
     url: '#',
   }
 ];
@@ -187,37 +188,36 @@ function News() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Show first 9 or next 16 depending on state
-  const visibleNews = showSecondSet
-    ? newsData.slice(9, 25)
-    : newsData.slice(0, 9);
-
   return (
     <div style={{ width: '100vw', minHeight: '100vh', background: 'black', paddingTop: 90, paddingBottom: 100 }}>
       <div style={{ maxWidth: 1400, margin: '0 auto', padding: 0 }}>
         <div style={{ textAlign: 'center', margin: '0 0 2.5rem 0', paddingTop: '3rem' }}>
           <h2 style={{ color: '#D5B64C', fontSize: '2.5rem', fontWeight: 700, marginBottom: '2.5rem' }}>Inside STRATIO, INC.</h2>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))', gap: '18px', justifyItems: 'center' }}>
-          {visibleNews.map((news, idx) => (
-            <div key={idx} style={{ background: 'none', width: 380, display: 'flex', flexDirection: 'column', minHeight: 420, margin: 0, padding: 0 }}>
-              <img src={news.img} alt={news.title} style={{ width: '100%', height: 200, objectFit: 'cover', margin: 0, padding: 0 }} />
-              <div style={{ background: '#222', margin: 0, padding: '1.5rem 1.2rem 1.2rem 1.2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                <h3 style={{ color: '#fff', fontSize: '1.35rem', fontWeight: 700, margin: 0, marginBottom: 10, lineHeight: 1.25 }}>{news.title}</h3>
-                <p style={{ color: '#ccc', fontSize: '1rem', margin: 0, marginBottom: 0, flex: 1, lineHeight: 1.5 }}>{news.desc}</p>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#181818', padding: '0.9rem 1.2rem', borderTop: '1px solid #333', margin: 0 }}>
-                <span style={{ color: '#ccc', fontSize: '0.98rem' }}>{news.date}</span>
-                <a href={news.url} style={{ color: '#fff', fontSize: 22, display: 'flex', alignItems: 'center' }} aria-label="Read more">
-                  <span style={{ display: 'inline-block', transform: 'translateY(2px)' }}>↗</span>
-                </a>
-              </div>
-            </div>
+        {/* First 9 news cards */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(435px, 1fr))', gap: '10px', justifyItems: 'center' }}>
+          {newsData.slice(0, 9).map((news, idx) => (
+            <NewsCard key={idx} {...news} />
           ))}
         </div>
+        {/* View More button */}
         {!showSecondSet && (
           <div style={{ textAlign: 'center', margin: '3rem 0 0 0' }}>
-            <button onClick={() => setShowSecondSet(true)} style={{ background: 'transparent', border: '2px solid #fff', color: '#fff', padding: '1rem 2.5rem', borderRadius: '2rem', fontSize: '1.1rem', fontWeight: 600, cursor: 'pointer', marginTop: '2rem' }}>View more  +</button>
+            <button
+              className="view-more-btn"
+              onClick={() => setShowSecondSet(true)}
+              style={{ border: '2px solid #fff', padding: '1rem 2.5rem', borderRadius: '2rem', fontSize: '1.1rem', fontWeight: 600, cursor: 'pointer', marginTop: '2rem' }}
+            >
+              VIEW MORE  +
+            </button>
+          </div>
+        )}
+        {/* Remaining 16 news cards */}
+        {showSecondSet && (
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(435px, 1fr))', gap: '10px', justifyItems: 'center', marginTop: '2.5rem' }}>
+            {newsData.slice(9, 25).map((news, idx) => (
+              <NewsCard key={9 + idx} {...news} />
+            ))}
           </div>
         )}
       </div>
