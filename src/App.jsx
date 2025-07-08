@@ -1,6 +1,6 @@
 // src/App.jsx
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import OurCrew from './OurCrew';
@@ -11,13 +11,7 @@ import './App.css';
 
 function AppContent() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
   const navigate = useNavigate();
-  const isAboutPage = location.pathname === '/about';
-  const isOurCrewPage = location.pathname === '/ourcrew';
-  const isProductsPage = location.pathname === '/products';
-  const isNewsPage = location.pathname === '/news';
-  const isContactPage = location.pathname === '/contact';
 
   const handleLogoClick = (e) => {
     e.preventDefault();
@@ -70,13 +64,6 @@ function AppContent() {
               onClick={handleLogoClick}
               style={{ cursor: 'pointer' }}
             />
-          </div>
-          <div className="header-center">
-            {isAboutPage && <span className="header-about-text" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>About</span>}
-            {isOurCrewPage && <span className="header-about-text" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>Our Crew</span>}
-            {isProductsPage && <span className="header-about-text" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>Products & Services</span>}
-            {isNewsPage && <span className="header-about-text" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>News</span>}
-            {isContactPage && <span className="header-about-text" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>Contact</span>}
           </div>
           <nav className="header-right">
             <button className="menu-btn" onClick={() => setMenuOpen(true)} aria-label="Open Menu">

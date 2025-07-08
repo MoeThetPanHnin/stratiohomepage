@@ -76,7 +76,8 @@ body, html, #root, .app {
     height: 70px;
   }
   .header-logo {
-    display: none;
+    display: block;
+    width: 150px;
   }
 }
 
@@ -87,14 +88,12 @@ body, html, #root, .app {
 }
 
 .header-logo {
-  top:36px;
-  left: 138px;
-  width: 230px; 
-  height: 18px;
   display: block;
-  background: transparent url('./public/img/STRATIO Logo.png') 0% 0% no-repeat padding-box;
+  max-height: 48px;
+  width: auto;
   opacity: 1;
   cursor: pointer;
+  margin-left: 16px;
 }
 
 .header-center {
