@@ -404,11 +404,13 @@ button[type="submit"]:hover {
   filter: invert(0);
 }
 .icon-box:hover {
-  transform: scale(1.1);
+  /* Remove hover effect */
+  transform: none !important;
 }
 .icon-box:hover img {
-  filter: invert(0);
-  transition: transform 0.3s;
+  /* Remove hover effect */
+  filter: none !important;
+  transition: none !important;
 }
 
 .go-top-btn {
@@ -441,10 +443,12 @@ button[type="submit"]:hover {
 
 }
 .go-top-btn:hover {
-  background: none;
+  /* Remove hover effect */
+  background: none !important;
 }
 .go-top-btn:hover img {
-  filter: invert(1);
+  /* Remove hover effect */
+  filter: none !important;
 }
 
 /* Custom Dropdown Styles (shared) */
