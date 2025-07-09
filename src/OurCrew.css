@@ -23,9 +23,17 @@
   margin: 0 auto;
   justify-content: center;
 }
+
+.ourcrew-container > section {
+  margin-top: 400px !important;    /* 상단 여백 */
+  margin-bottom: 400px !important; /* 하단 여백 */
+}
+
 .board-member-section .employee-cards {
-  display: flex;
-  justify-content: center;
+  display: flex;              /* flex 컨테이너로 유지 */
+  justify-content: flex-start;/* 좌측부터 배치 */
+  gap: 30px;                  /* 카드 간격은 필요에 따라 조절 */
+  flex-wrap: wrap;            /* 화면이 좁아지면 줄 바꿈 허용 */
 }
 
 .crew-card-details {
@@ -77,16 +85,16 @@
 
 .crew-card-img-wrapper {
   position: relative;
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   border: none;
   outline: none;
   box-shadow: none;
 }
 
 .crew-card-img {
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: none;
@@ -157,8 +165,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   background: transparent;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -167,12 +175,13 @@
 }
 
 .crew-card:hover .crew-card-linkedin-arrow {
+  filter: brightness(0) invert(1);
   opacity: 1;
 }
 
 .crew-card-linkedin-arrow img {
-  width: 36px;
-  height: 36px;
+  width: 120px;
+  height: 120px;
   filter: brightness(0.5) invert(1); /* Make arrow white */
 }
 

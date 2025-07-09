@@ -169,7 +169,7 @@ function OurCrew() {
         </section>
 
         {/* Board Members Section */}
-        <section style={{ marginBottom: '12rem' }} className="board-member-section">
+        <section style={{ marginBottom: '12rem' , marginTop: '12rem'}} className="board-member-section">
           <h2 className="ourcrew-section-title">Board Members</h2>
           <div className="employee-cards">
             <div className="employee-card" >
