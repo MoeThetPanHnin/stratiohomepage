@@ -108,7 +108,6 @@ function AppContent() {
               src="/img/STRATIO Logo.png" 
               alt="Stratio Logo" 
               className="footer-logo" 
-              onClick={handleLogoClick}
               style={{ cursor: 'pointer' }}
             />
             <p className="footer-copyright">© 2025 STRATIO. All rights reserved.</p>
