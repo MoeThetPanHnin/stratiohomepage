@@ -195,7 +195,7 @@ function News() {
           <h2 style={{ color: '#D5B64C', fontSize: '2.5rem', fontWeight: 700, marginBottom: '2.5rem' }}>Inside STRATIO, INC.</h2>
         </div>
         {/* First 9 news cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(435px, 1fr))', gap: '10px', justifyItems: 'center' }}>
+        <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(370px, 1fr))', gap: '20px', justifyItems: 'center' }}>
           {newsData.slice(0, 9).map((news, idx) => (
             <NewsCard key={idx} {...news} />
           ))}
@@ -214,7 +214,7 @@ function News() {
         )}
         {/* Remaining 16 news cards */}
         {showSecondSet && (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(435px, 1fr))', gap: '10px', justifyItems: 'center', marginTop: '2.5rem' }}>
+          <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(370px, 1fr))', gap: '20px', justifyItems: 'center', marginTop: '2.5rem' }}>
             {newsData.slice(9, 25).map((news, idx) => (
               <NewsCard key={9 + idx} {...news} />
             ))}
@@ -224,6 +224,9 @@ function News() {
       <style>{`
         @media (max-width: 900px) {
           .news-card { width: 100% !important; min-width: unset !important; }
+        }
+        @media (min-width: 1100px) {
+          .news-grid { gap: 15px !important; }
         }
       `}</style>
     </div>
