@@ -135,7 +135,7 @@ function AppContent() {
               className="footer-logo" 
               style={{ cursor: 'pointer' }}
             />
-            <p className="footer-copyright">© 2025 STRATIO. All rights reserved.</p>
+            <p className="footer-copyright">Copyright © 2025 STRATIO, INC. All rights reserved.</p>
           </div>
           <div className="footer-right">
             <div className="social-icons">

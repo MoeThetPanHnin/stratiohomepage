@@ -1160,3 +1160,11 @@
     padding: 0.8rem 2rem;
   }
 } 
+ 
+ .about-feature h3{
+  color:#FFFFFF;
+ }
+
+.about-feature p{
+ color:#D9D9D9;
+}
