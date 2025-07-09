@@ -35,20 +35,20 @@ function ProductsServices() {
   }, []);
 
   return (
-    <div style={{ width: '100vw', minHeight: '690px', background: 'black', paddingTop: 90, paddingBottom: 100 }}>
-      <div style={{ width: '100vw', margin: 0, padding: 0 }}>
+    <div className="products-services-root">
+      <div className="products-services-container">
         {products.map((product, idx) => (
           <section
             key={product.name}
-            className="product-section"
+            className={`product-section ${idx % 2 === 1 ? 'product-section-reverse' : ''}`}
           >
-            <div style={{ flex: 1, background: 'black', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', margin: 0, padding: 0 }}>
-              <div style={{ maxWidth: 500, width: '100%', margin: 0, padding: 0 }}>
-                <img src={product.logo} alt={product.name + ' Logo'} style={{ maxWidth: 200, maxHeight: 60, marginBottom: 32 }} />
-                <p style={{ color: '#D5B64C', fontFamily: 'Noto Sans KR', fontWeight: 600, fontSize: '20px', marginBottom: 16 , minWidth: '600px' }}>{product.highlight}</p>
-                <p style={{ color: '#D9D9D9', fontFamily: 'Noto Sans KR', fontSize: '20px', marginBottom: 32, minWidth: '600px', lineHeight: '1.5' }}>{product.desc}</p>
-                <a href={product.url} className="product-btn" target="_blank" rel="noopener noreferrer" style={{ marginTop: 24, marginBottom: 0, display: 'inline-block' }}>
-                  <span style={{ fontFamily: 'Noto Sans KR', fontSize: '20px', fontWeight: '600' }}>Web Site </span>
+            <div className="product-content">
+              <div className="product-content-inner">
+                <img src={product.logo} alt={product.name + ' Logo'} className="product-logo" />
+                <p className="product-highlight">{product.highlight}</p>
+                <p className="product-description">{product.desc}</p>
+                <a href={product.url} className="product-btn" target="_blank" rel="noopener noreferrer">
+                  <span className="product-btn-text">Web Site </span>
                   <img src="/icon/Arrow Outward.svg" alt="Arrow" className="arrow" />
                 </a>
               </div>
@@ -57,15 +57,6 @@ function ProductsServices() {
           </section>
         ))}
       </div>
-      <style>{`
-        @media (max-width: 900px) {
-          section {
-            flex-direction: column !important;
-            min-height: unset !important;
-            height: auto !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }
