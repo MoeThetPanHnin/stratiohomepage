@@ -777,4 +777,32 @@ button[type="submit"]:hover {
   label {
     font-size: 0.8rem;
   }
+}
+
+@media (min-width: 900px) {
+  .product-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2rem 3rem 2rem;
+    box-sizing: border-box;
+  }
+  .product-logo {
+    max-height: 50px;
+    width: auto;
+    display: block;
+    margin-bottom: 1rem;
+    object-fit: contain;
+  }
+  .product-desc {
+    margin-bottom: 1rem;
+  }
+  .product-detail {
+    margin-bottom: 2rem;
+  }
+  .product-btn {
+    margin-top: 1.5rem;
+  }
 } 

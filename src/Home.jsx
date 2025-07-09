@@ -92,9 +92,9 @@ function Home() {
           </div>
         </div>
 
-        <div className="product-card stnf" style={{ backgroundImage: 'url(./img/stnf.jpg)' }}>
+        <div className="product-card product-card-stnf" style={{ backgroundImage: 'url(./img/stnf.jpg)' }}>
           <div className="product-overlay">
-            <img src="/img/STNFlogo.png" alt="STNF Logo" className="product-logo stnflogo" />
+            <img src="/img/STNFlogo.png" alt="STNF Logo" className="product-logo" />
             <p className="product-desc">Your Idea, Our Fab</p>
             <p className="product-detail">STNF is a Lab-to-Fab Foundry that supports startups disrupting the market, research institutions, and large corporations in transitioning from R&D to the commercial foundry production.</p>
             <a href="https://stnf.io/" className="product-btn" target="_blank" rel="noopener noreferrer">
