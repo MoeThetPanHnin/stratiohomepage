@@ -169,10 +169,10 @@ function OurCrew() {
         </section>
 
         {/* Board Members Section */}
-        <section style={{ marginBottom: '6rem' }}>
+        <section style={{ marginBottom: '6rem' }} className="board-member-section">
           <h2 className="ourcrew-section-title">Board Members</h2>
-          <div className="board-members-cards">
-            <div className="board-members-card" >
+          <div className="employee-cards">
+            <div className="employee-card" >
               <h3 className="crew-card-name">Jinhyung Lee</h3>
               <div className="crew-card-underline"></div>
               <div className="crew-card-role">

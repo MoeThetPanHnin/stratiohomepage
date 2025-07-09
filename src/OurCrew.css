@@ -578,3 +578,7 @@
 .crew-card-details img {
   height: 30px;
 }
+
+.board-member-section .employee-cards {
+  justify-content: flex-end;
+}
