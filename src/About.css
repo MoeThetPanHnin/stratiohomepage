@@ -67,7 +67,7 @@
   background: none;
   color: #FFFFFF;
   padding: 0.2rem 0.5rem;
-  border-radius: 15px;
+  border-radius: 50px;
   border: 1px solid #FFFFFF;
   font-size: 20px;
 }
@@ -507,7 +507,7 @@
   background:none;
   color: #FFFFFF;
   padding: 0.2rem 0.5rem;
-  border-radius: 15px;
+  border-radius: 50px;
   border: 1px solid #FFFFFF;
   font-family: 'Noto Sans KR';
   font-size: 20px;
