@@ -104,6 +104,23 @@ body, html, #root, .app {
   flex: 1;
 }
 
+/* Center title */
+@media (min-width: 900px) {
+  .header-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 899px) {
+  .header-center {
+    display: none;
+  }
+}
+
 .header-about-text {
   color: #fff;
   font-size: 1.2rem;
@@ -642,6 +659,37 @@ button[type="submit"]:hover {
 }
 .menu-overlay-link:hover {
   color: #D5B64C;
+}
+
+/* Center navigation text for specific screen sizes */
+@media (min-width: 900px) and (max-width: 1200px) {
+  .menu-overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  .menu-overlay-link {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1290px) {
+  .menu-overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  .menu-overlay-link {
+    text-align: center;
+  }
 }
 .menu-overlay-footer {
   position: fixed;

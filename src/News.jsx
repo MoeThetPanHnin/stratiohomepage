@@ -208,7 +208,7 @@ function News() {
               onClick={() => setShowSecondSet(true)}
               style={{ border: '2px solid #fff', padding: '1rem 2.5rem', borderRadius: '2rem', fontSize: '1.1rem', fontWeight: 600, cursor: 'pointer', marginTop: '2rem' }}
             >
-              VIEW MORE  +
+              View More  +
             </button>
           </div>
         )}

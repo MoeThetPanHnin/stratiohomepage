@@ -1,5 +1,6 @@
 // src/App.jsx
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
@@ -12,6 +13,25 @@ import './App.css';
 function AppContent() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const getPageTitle = (pathname) => {
+    switch (pathname) {
+      case '/about':
+        return 'About';
+      case '/ourcrew':
+        return 'Our Crew';
+      case '/products':
+        return 'Products & Services';
+      case '/news':
+        return 'News';
+      case '/contact':
+        return 'Contact';
+      default:
+        return '';
+    }
+  };
+  const pageTitle = getPageTitle(location.pathname);
 
   const handleLogoClick = (e) => {
     e.preventDefault();
@@ -65,6 +85,11 @@ function AppContent() {
               style={{ cursor: 'pointer' }}
             />
           </div>
+          {pageTitle && (
+            <div className="header-center">
+              <span className="header-about-text">{pageTitle}</span>
+            </div>
+          )}
           <nav className="header-right">
             <button className="menu-btn" onClick={() => setMenuOpen(true)} aria-label="Open Menu">
               <span className="menu-text">MENU</span>
