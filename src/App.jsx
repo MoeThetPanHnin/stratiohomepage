@@ -29,7 +29,7 @@ function AppContent() {
               src="/img/STRATIO Logo.png" 
               alt="Stratio Logo" 
               className="menu-overlay-logo" 
-              onClick={handleLogoClick}
+              onClick={(e) => { handleLogoClick(e); setMenuOpen(false); }}
               style={{ cursor: 'pointer' }}
             />
             <button className="menu-overlay-close" onClick={() => setMenuOpen(false)} aria-label="Close Menu">
@@ -127,9 +127,11 @@ function AppContent() {
                 <img src="/icon/linkedin.svg" alt="LinkedIn" />
               </a>
             </div>
-            <button className="go-top-btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Go to Top">
-              <img src="/icon/Top.svg" alt="Go to Top" style={{ width: 44, height: 44 }} />
-            </button>
+            { !menuOpen && (
+              <button className="go-top-btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Go to Top">
+                <img src="/icon/Top.svg" alt="Go to Top" style={{ width: 44, height: 44 }} />
+              </button>
+            )}
           </div>
         </footer>
       </div>
