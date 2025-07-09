@@ -196,7 +196,7 @@
   justify-self: center;
 }
 
-.employee-card {
+.employee-card, .advisor-card, .board-members-card {
   background: #2F2F2F;
   padding: 1.5rem 1rem 1.5rem;
   text-align: center;
@@ -204,17 +204,95 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: visible;
   border-radius: 0;
   width: 370px;
+  max-width: 370px;
   height: auto;
   margin-right: 0;
 }
 
-/* Employee card specific adjustments */
+/* Image wrapper for employee, advisor, and board member cards */
+.employee-card-img-wrapper, .advisor-card-img-wrapper, .board-members-card-img-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin-bottom: 1rem;
+}
+
+.employee-card-img, .advisor-card-img, .board-members-card-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: #111;
+  display: block;
+  transition: filter 0.2s;
+}
+
+/* LinkedIn arrow hover effect for all card types */
+.employee-card-linkedin-arrow, .advisor-card-linkedin-arrow, .board-members-card-linkedin-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 2;
+}
+
+.employee-card:hover .employee-card-linkedin-arrow,
+.advisor-card:hover .advisor-card-linkedin-arrow,
+.board-members-card:hover .board-members-card-linkedin-arrow {
+  opacity: 1;
+}
+
+.employee-card-linkedin-arrow img, 
+.advisor-card-linkedin-arrow img, 
+.board-members-card-linkedin-arrow img {
+  width: 36px;
+  height: 36px;
+  filter: brightness(0.5) invert(1);
+}
+
+.employee-card-linkedin-arrow:hover, 
+.advisor-card-linkedin-arrow:hover, 
+.board-members-card-linkedin-arrow:hover {
+  background: transparent;
+}
+
+.employee-card-linkedin-arrow:hover img, 
+.advisor-card-linkedin-arrow:hover img, 
+.board-members-card-linkedin-arrow:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Darken images on hover */
+.employee-card:hover .employee-card-img,
+.advisor-card:hover .advisor-card-img,
+.board-members-card:hover .board-members-card-img {
+  filter: brightness(0.7);
+  transition: filter 0.2s;
+}
+
+/* Remove old specific styling for employee cards */
 .employee-card .crew-card-name {
   font-size: 18px;
   margin-bottom: 0.3rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .employee-card .crew-card-role {
@@ -227,44 +305,32 @@
 }
 
 .employee-card .crew-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 0.5rem;
 }
 
-.employee-card .crew-card-details img {
-  height: 30px;
-  object-fit: contain;
+/* Center logo when there's only one image */
+.employee-card .crew-card-details:has(img:only-child) {
+  justify-content: center;
 }
 
-/* Force CSS refresh */
-.advisor-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  width: 100%;
-  max-width: 1200px;
+.employee-card .crew-card-details img:only-child {
   margin: 0 auto;
-  justify-items: center;
-} 
-
-.advisor-card {
-  background: #2F2F2F;
-  padding: 1.5rem 1rem 1.5rem;
-  text-align: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 0;
-  width: 370px;
-  max-width: 370px;
-  height: auto;
 }
 
-/* Advisor card specific adjustments */
+/* For cards with multiple logos, distribute them evenly */
+.employee-card .crew-card-details:has(img:not(:only-child)) {
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Remove old specific styling for advisor cards */
 .advisor-card .crew-card-name {
   font-size: 18px;
   margin-bottom: 0.3rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .advisor-card .crew-card-role {
@@ -280,7 +346,48 @@
   margin-top: 0.5rem;
 }
 
-.advisor-card .crew-card-details img {
+/* Remove old specific styling for board member cards */
+.board-members-card .crew-card-name {
+  font-size: 18px;
+  margin-bottom: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.board-members-card .crew-card-role {
+  font-size: 14px;
+  margin-bottom: 0.3rem;
+}
+
+.board-members-card .crew-card-degree {
+  font-size: 14px;
+}
+
+.board-members-card .crew-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+/* Center logo when there's only one image */
+.board-members-card .crew-card-details:has(img:only-child) {
+  justify-content: center;
+}
+
+.board-members-card .crew-card-details img:only-child {
+  margin: 0 auto;
+}
+
+/* For cards with multiple logos, distribute them evenly */
+.board-members-card .crew-card-details:has(img:not(:only-child)) {
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Logo styling for all card types */
+.employee-card .crew-card-details img,
+.advisor-card .crew-card-details img,
+.board-members-card .crew-card-details img {
   height: 30px;
   object-fit: contain;
 }
@@ -325,43 +432,7 @@
 }
 
 .board-members-card {
-  background: #2F2F2F;
-  padding: 1.5rem 1rem 1.5rem;
-  text-align: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 0;
-  width: 370px;
-  height: auto;
-  margin-right: 0;
   justify-self: start;
-}
-
-/* Board members card specific adjustments */
-.board-members-card .crew-card-name {
-  font-size: 18px;
-  margin-bottom: 0.3rem;
-  margin-top: 1rem;
-}
-
-.board-members-card .crew-card-role {
-  font-size: 14px;
-  margin-bottom: 0.3rem;
-}
-
-.board-members-card .crew-card-degree {
-  font-size: 14px;
-}
-
-.board-members-card .crew-card-details {
-  margin-top: 0.5rem;
-}
-
-.board-members-card .crew-card-details img {
-  height: 30px;
-  object-fit: contain;
 }
 
 @media (max-width: 1290px) {
@@ -427,5 +498,25 @@
     width: 100%;
     max-width: 320px;
     padding: 1.5rem 1rem 2rem;
+  }
+} 
+
+@media (max-width: 400px) {
+  .crew-card, .employee-card, .advisor-card, .board-members-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 0.5rem 1rem;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 374px) {
+  .crew-card, .employee-card, .advisor-card, .board-members-card {
+    width: 100%;
+    max-width: 280px;
+    padding: 1rem 0.3rem 1rem;
+    margin-left: 0;
+    margin-right: auto;
   }
 } 
