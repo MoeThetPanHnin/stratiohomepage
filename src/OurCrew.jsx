@@ -72,7 +72,7 @@ function OurCrew() {
                   - Stanford Univ. EE PhD
                 </div>
                 <div>
-                  - Ex. ASSIA, Naver Corp. Engineer<br/>
+                  - Ex. ASSIA, Naver Corp.Engineer<br/>
                   - STRATIO, Inc., SVP. Eng.
                 </div>
               </div>
