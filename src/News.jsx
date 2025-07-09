@@ -8,14 +8,14 @@ const newsData = [
     title: 'ME Commons Hubs Officially Unveiled: Stratio Proudly ',
     desc: 'Under the CHIPS and Science Act, the Defense Department today announced the award of nearly $240 million dollars to eight regional "innovation hubs" around the United States which will be a part of',
     date: 'September 20, 2023',
-    url: '/newshtml/[2023.09.17] news.html',
+    url: 'https://www.defense.gov/News/News-Stories/Article/Article/3532338/dod-names-8-locations-to-serve-as-new-microelectronics-commons-hubs/',
   },
   {
     img: '/news/newsimg/[2022.12.15] post.png',
     title: "Stratio and South Korea's National IIT Industry",
     desc: 'SAN JOSE, Calif., Dec. 15, 2022 (GLOBE NEWSWIRE) -- Stratio, Inc., an AI and sensor company that creates proprietary infrared technology to enhance public safety, today announced its collaboration with',
     date: 'December 15, 2022',
-    url: '/newshtml/[2022.12.19] news.html',
+    url: 'https://www.globenewswire.com/news-release/2022/12/15/2574626/0/en/Stratio-and-South-Korea-s-National-IT-Industry-Promotion-Agency-NIPA-Announce-Technology-Roadmap-in-2023.html',
   },
   {
     img: '/news/newsimg/[2022.11.15] post.png',
@@ -214,7 +214,7 @@ function News() {
         )}
         {/* Remaining 16 news cards */}
         {showSecondSet && (
-          <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(370px, 1fr))', gap: '20px', justifyItems: 'center', marginTop: '2.5rem' }}>
+          <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(370px, 1fr))', gap: '20px', justifyItems: 'center', marginTop: '2.5rem', marginBottom: '4rem' }}>
             {newsData.slice(9, 25).map((news, idx) => (
               <NewsCard key={9 + idx} {...news} />
             ))}
