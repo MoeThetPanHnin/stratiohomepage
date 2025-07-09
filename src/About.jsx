@@ -50,6 +50,8 @@ function About() {
         </div>
       </section>
 
+      <hr className="about-divider" />
+
       {/* About STRATIO Section */}
       <section className="about-company">
         <div className="about-company-content">

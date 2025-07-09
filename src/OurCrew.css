@@ -21,6 +21,34 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  justify-content: center;
+}
+
+@media (max-width: 1290px) {
+  .crew-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .crew-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .crew-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .crew-card {
@@ -35,7 +63,7 @@
   overflow: visible;
   width: 100%;
   max-width: 370px;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .crew-card-img-wrapper {
@@ -153,13 +181,19 @@
   transition: filter 0.2s;
 }
 
-.employee-cards {
+.employee-cards, .advisor-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 30px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  justify-content: center;
+  justify-items: center;
+}
+
+.employee-cards > *, .advisor-cards > * {
+  justify-self: center;
 }
 
 .employee-card {
@@ -170,9 +204,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 8px;
-  width:420px;
-  height:250px;
+  border-radius: 0;
+  width: 420px;
+  height: 250px;
   margin-right: 7px;
 }
 
@@ -216,7 +250,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0;
   
   max-width: 435px;
   height: 280px;
@@ -291,5 +325,104 @@
   }
   .advisor-card {
     max-width: 400px;
+  }
+} 
+
+.board-members-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: start;
+  justify-items: start;
+}
+
+.board-members-card {
+  background: #2F2F2F;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0;
+  width: 420px;
+  height: 250px;
+  margin-right: 7px;
+  justify-self: start;
+}
+
+.board-members-card .crew-card-name {
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  margin-top: 45px;
+}
+
+.board-members-card .crew-card-underline {
+  color: #D5B64C;
+  height: 4px;
+  width: 50px;
+  margin: 0.5rem auto 1rem auto;
+  background: #D5B64C;
+  border-radius: 5px;
+}
+
+.board-members-card .crew-card-role {
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+}
+
+.board-members-card .crew-card-degree {
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  padding: 0.2em 0.7em;
+  font-weight: 600;
+  margin-right: 8px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.board-members-card .crew-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.board-members-card .crew-card-details img {
+  height: 40px;
+  object-fit: contain;
+}
+
+@media (max-width: 1290px) {
+  .board-members-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .board-members-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .board-members-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 } 

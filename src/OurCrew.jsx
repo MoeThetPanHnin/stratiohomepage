@@ -171,8 +171,8 @@ function OurCrew() {
         {/* Board Members Section */}
         <section style={{ marginBottom: '6rem' }}>
           <h2 className="ourcrew-section-title">Board Members</h2>
-          <div className="employee-cards">
-            <div className="employee-card">
+          <div className="board-members-cards" style={{justifyContent: 'start'}}>
+            <div className="employee-card board-members-card" style={{justifySelf: 'start'}}>
               <h3 className="crew-card-name">Jinhyung Lee</h3>
               <div className="crew-card-underline"></div>
               <div className="crew-card-role">
@@ -181,7 +181,6 @@ function OurCrew() {
               </div>
               <div className="crew-card-details">
                 <img src="/ourcrew/stanford-university-vector-logo.svg" alt="Stanford University" style={{ height: '45px', objectFit: 'contain', marginRight: '10px' }} />
-                
               </div>
             </div>
           </div>
