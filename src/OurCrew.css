@@ -23,7 +23,16 @@
   margin: 0 auto;
   justify-content: center;
 }
+.board-member-section .employee-cards {
+  display: flex;
+  justify-content: center;
+}
 
+.crew-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 @media (max-width: 1290px) {
   .crew-cards {
     grid-template-columns: repeat(3, 1fr);

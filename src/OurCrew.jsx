@@ -11,7 +11,7 @@ function OurCrew() {
     <div className="about">
       <div className="ourcrew-container">
         {/* Leader Group Section */}
-        <section style={{ marginBottom: '6rem' }}>
+        <section style={{ marginBottom: '12rem' }}>
           <h2 className="ourcrew-section-title">Stanford Alumni Leader Group</h2>
           <div className="crew-cards">
             <div className="crew-card">
@@ -113,7 +113,7 @@ function OurCrew() {
         </section>
 
         {/* Key Employees Section */}
-        <section style={{ marginBottom: '6rem' }}>
+        <section style={{ marginBottom: '12rem' }}>
           <h2 className="ourcrew-section-title">Key Employees</h2>
           <div className="employee-cards">
             <div className="employee-card">
@@ -169,33 +169,25 @@ function OurCrew() {
         </section>
 
         {/* Board Members Section */}
-        <section style={{ marginBottom: '6rem' }} className="board-member-section">
+        <section style={{ marginBottom: '12rem' }} className="board-member-section">
           <h2 className="ourcrew-section-title">Board Members</h2>
           <div className="employee-cards">
             <div className="employee-card" >
-              <h3 className="crew-card-name">Jinhyung Lee</h3>
+            <h3 className="crew-card-name">Jinhyung Lee</h3>
               <div className="crew-card-underline"></div>
               <div className="crew-card-role">
                 <span className="crew-card-degree">PhD</span>
                 Professor, Stanford Univ.
               </div>
-            <div className="crew-card-details">
-                <img src="/ourcrew/stanford-university-vector-logo.svg" alt="Stanford University" style={{ height: '45px', objectFit: 'contain', marginRight: '10px', justifySelf: 'center' }} />
+              <div className="crew-card-details">
+                <img src="/ourcrew/stanford-university-vector-logo.svg" alt="NC Soft" style={{ height: '40px', objectFit: 'contain' }} />
               </div>
             </div>
-
-
-          
-        
-
-            
           </div>
         </section>
         
-
-
         {/* Advisors Section */}
-        <section style={{ marginBottom: '6rem' }}>
+        <section style={{ marginBottom: '12rem' }}>
           <h2 className="ourcrew-section-title">Advisors</h2>
           <div className="employee-cards">
             <div className="employee-card">
@@ -204,8 +196,6 @@ function OurCrew() {
               <div className="crew-card-role">
                 <span className="crew-card-degree">PhD</span>
                 Managing Partner, <br/> Silicon Catalyst
-                
-               
               </div>
               <div className="crew-card-details">
                 <img src="/ourcrew/Windener University.svg" alt="Stanford University" style={{ width: '30px', height: '40px', objectFit: 'contain', marginRight: '10px', marginLeft: '10px' }} />
@@ -241,8 +231,6 @@ function OurCrew() {
                 <img src="/ourcrew/University_of_Oxford.svg" alt="NC Soft" style={{ height: '40px', objectFit: 'contain' }} />
               </div>
             </div>
-
-            
           </div>
         </section>
       </div>
