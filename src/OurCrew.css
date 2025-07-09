@@ -520,3 +520,61 @@
     margin-right: auto;
   }
 } 
+
+.board-member-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 0 0 0 ;
+  justify-content: center;
+  justify-items: center;
+}
+
+.board-members {
+  justify-self: start;
+  width: 370px;
+  max-width: 370px;
+  height: auto;
+  margin-right: 0;
+  background: #2F2F2F;
+  padding: 1.5rem 1rem 1.5rem;
+  text-align: center;
+  color: #fff;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  
+ 
+  border-radius: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+}
+
+
+.board-members-card .crew-card-name {
+  font-size: 18px;
+  margin-bottom: 0.3rem;
+  margin-top: 0.5rem;
+  text-align:center;
+}
+
+.board-members-card .crew-card-role {
+  font-size: 14px;
+  margin-bottom: 0.3rem;
+}
+
+.crew-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.crew-card-details img {
+  height: 30px;
+}
