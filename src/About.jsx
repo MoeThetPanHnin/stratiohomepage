@@ -17,7 +17,9 @@ function About() {
             <p>STRATIO is the first and only company in the world to commercialize Germanium (Ge)-based SWIR sensors <br /> using standard CMOS processes. This breakthrough delivers what InGaAs never could: high-sensitive, mass-producible, and AI-integrated SWIR sensors that are ready for real-world impact.</p>
           </div>
         </div>
-        <div className="about-hero-bg"></div>
+        <div className="about-hero-bg">
+            <img src="/aboutimg/Sensor_img.png" alt="Sensor" style={{width: '100%', height: 'auto', objectFit: 'contain', display: 'block'}} />
+        </div>
       </section>
 
       {/* Performance Section */}
