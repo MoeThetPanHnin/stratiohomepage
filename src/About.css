@@ -3,6 +3,7 @@
   width: 100%;
   background: #000;
   color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
   padding-top: 90px; /* Account for fixed header */
   padding-bottom: 100px; /* Account for fixed footer */
 }
@@ -109,6 +110,7 @@
   padding: 6rem 2rem;
   background: #000;
   text-align: center;
+  margin-bottom: 6rem;
 }
 
 @media (max-width: 768px) {
@@ -176,9 +178,10 @@
 
 /* About Company Section */
 .about-company {
-  padding: 0;
+  padding: 5rem 0 0 0;
   background: none;
   text-align: center;
+  margin-top: 6rem;
 }
 
 .about-company-content {
