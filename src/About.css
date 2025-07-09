@@ -900,7 +900,7 @@
     align-items: center; /* Center content horizontally */
     gap: 0;
     background: #1a1a1a; /* Dark background as seen in the image */
-    border-radius: 16px; /* Rounded corners for the card */
+    border-radius: 0; /* Rounded corners for the card */
     box-shadow: 0 4px 24px rgba(0,0,0,0.3); /* Subtle shadow for depth */
     margin: 2rem auto; /* Center the card and provide vertical spacing */
     padding: 0; /* No padding on the card itself, content handles it */
@@ -917,13 +917,13 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 200px; /* Fixed height for the image container, adjusted for mobile */
+    height: auto; /* Fixed height for the image container, adjusted for mobile */
   }
 
   .about-ceo-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Scale the image to cover the container */
+    height: auto;
+    object-fit: contain; /* Scale the image to cover the container */
     display: block;
     border-radius: 0;
   }
@@ -995,7 +995,7 @@
     max-width: 350px;
     width: 90vw;
     margin: 1.5rem auto;
-    border-radius: 12px;
+    border-radius: 0;
   }
   .about-ceo-image {
     height: 180px;
@@ -1016,6 +1016,27 @@
   .phd-badge {
     font-size: 14px;
   }
+
+  .about-ceo-image {
+    width: 100%; /* Image takes full width of its container */
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background: #000; /* Black background behind the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: auto; /* Fixed height for the image container, adjusted for mobile */
+  }
+
+  .about-ceo-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Scale the image to cover the container */
+    display: block;
+    border-radius: 0;
+  }
 }
 
 /* Specific adjustments for screens under 400px */
@@ -1024,7 +1045,7 @@
     max-width: 320px;
     width: 85vw;
     margin: 1rem auto;
-    border-radius: 8px;
+    border-radius: 0;
   }
   .about-ceo-image {
     height: 160px;
@@ -1052,6 +1073,26 @@
     width: 35px;
     height: 35px;
   }
+  .about-ceo-image {
+    width: 100%; /* Image takes full width of its container */
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background: #000; /* Black background behind the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: auto; /* Fixed height for the image container, adjusted for mobile */
+  }
+
+  .about-ceo-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Scale the image to cover the container */
+    display: block;
+    border-radius: 0;
+  }
 }
 
 /* Specific adjustments for screens under 374px (very small mobile) */
@@ -1060,7 +1101,7 @@
     max-width: 300px;
     width: 80vw;
     margin: 0.8rem auto;
-    border-radius: 6px;
+    border-radius: 0;
   }
   .about-ceo-image {
     height: 140px;
@@ -1087,6 +1128,26 @@
   .linkedin-icon {
     width: 30px;
     height: 30px;
+  }
+  .about-ceo-image {
+    width: 100%; /* Image takes full width of its container */
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background: #000; /* Black background behind the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: auto; /* Fixed height for the image container, adjusted for mobile */
+  }
+
+  .about-ceo-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Scale the image to cover the container */
+    display: block;
+    border-radius: 0;
   }
 }
 

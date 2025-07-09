@@ -171,8 +171,8 @@ function OurCrew() {
         {/* Board Members Section */}
         <section style={{ marginBottom: '6rem' }}>
           <h2 className="ourcrew-section-title">Board Members</h2>
-          <div className="employee-cards">
-            <div className="employee-card" style={{justifySelf: 'start'}}>
+          <div className="board-members-cards">
+            <div className="board-members-card" >
               <h3 className="crew-card-name">Jinhyung Lee</h3>
               <div className="crew-card-underline"></div>
               <div className="crew-card-role">
@@ -186,32 +186,7 @@ function OurCrew() {
 
 
           
-            <div className="employee-card ">
-              <h3 className="crew-card-name">Marc Rippen</h3>
-              <div className="crew-card-underline"></div>
-              <div className="crew-card-role">
-                <span className="crew-card-degree">PhD</span>
-                CEO, Alertgy
-              </div>
-              <div className="crew-card-details">
-                <img src="/ourcrew/Alertgy.png" alt="Stanford University" style={{ width: '120px', height: '30px', objectFit: 'contain', marginRight: '10px', marginLeft: '10px' }} />
-                <img src="/ourcrew/SRI.svg" alt="Silicon Catalyst" style={{ width: '40px', height: '30px', objectFit: 'contain', marginRight: '10px' }} />
-                <img src="/ourcrew/embry riddle.svg" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
-                <img src="/ourcrew/US ARMY.svg" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
-              </div>
-            </div>
-
-            <div className="employee-card ">
-              <h3 className="crew-card-name">Euijung Moon</h3>
-              <div className="crew-card-underline"></div>
-              <div className="crew-card-role">
-                <span className="crew-card-degree">PhD</span>
-                Professor, Oxford Univ.
-              </div>
-              <div className="crew-card-details">
-                <img src="/ourcrew/University_of_Oxford.svg" alt="NC Soft" style={{ height: '40px', objectFit: 'contain' }} />
-              </div>
-            </div>
+        
 
             
           </div>
