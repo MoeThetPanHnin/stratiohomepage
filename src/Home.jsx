@@ -119,7 +119,7 @@ function Home() {
             <div className="box"><img src="/Fit/Customer_Logo_Fit-09.png" alt="Biolumic" /></div>
             <div className="box"><img src="/Fit/Customer_Logo_Fit-10.png" alt="Libios" /></div>
             <div className="box"><img src="/Fit/Customer_Logo_Fit-11.png" alt="Cornell University" /></div>
-            <div className_="box"><img src="/Fit/Customer_Logo_Fit-12.png" alt="Illinois" /></div>
+            <div className="box"><img src="/Fit/Customer_Logo_Fit-12.png" alt="Illinois" /></div>
             <div className="box"><img src="/Fit/Customer_Logo_Fit-13.png" alt="UCLA" /></div>
             <div className="box"><img src="/Fit/Customer_Logo_Fit-14.png" alt="Kennesaw State University" /></div>
             <div className="box"><img src="/Fit/Customer_Logo_Fit-15.png" alt="Florida International University" /></div>
@@ -187,6 +187,8 @@ function Home() {
             
           </div>
         </section>
+
+       
 
       {/* Contact Section */}
       <section className="contact">

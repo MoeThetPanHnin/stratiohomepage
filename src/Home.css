@@ -193,10 +193,12 @@
 /* Partner/Company Logo Marquee Section */
 .partner.slide {
   width: 100%;
-  height: 200px;
+  height: 150px;
   background: #000;
   opacity: 1;
   overflow: hidden;
+  border-bottom: 1px solid #b6aeae;
+  margin-bottom: 150px;
 }
 
 .partner.slide .inner {
@@ -227,14 +229,14 @@
   cursor: pointer;
 }
 
-.partner.slide .box:hover img {
-  filter: grayscale(0);
-  opacity: 1;
+.partner.slide  {
+  margin-top: 40px;
 }
 
 @keyframes partner-marquee {
   0% {
     transform: translateX(0);
+
   }
   100% {
     transform: translateX(-50%);
