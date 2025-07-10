@@ -194,9 +194,12 @@ function Home() {
       <section className="contact">
         <div className="contact-info">
           <h2>Contact us</h2>
-          <p><strong>US Office.</strong><br />2211 Fortune Drive, Suite A, San Jose, CA 95131</p>
-          <p><strong>KR Office.</strong><br />B-911, 43 Changrop-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do (13449)</p>
-          <p><strong>Mail.</strong><br />contact@stratiotechnolgy.com</p>
+          <div classname="us">US Office.</div>
+          <div classname="us-address">2211 Fortune Drive, Suite A, San Jose, CA 95131</div>
+          <div classname="kr">KR Office.</div>
+          <div classname="kr-address">B-911, 43 Changrop-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do (13449)</div>
+          <div classname="mail">Mail.</div>
+          <div classname="mail-address">contact@stratiotechnolgy.com</div>
         </div>
         <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
           <div className="form-group">
