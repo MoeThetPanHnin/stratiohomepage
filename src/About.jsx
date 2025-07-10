@@ -75,7 +75,7 @@ function About() {
             <div className="about-ceo-image">
               <img src="/aboutimg/img.png" alt="Jaehyung James Lee" />
             </div>
-            <div className="about-ceo-info">
+            <div className="about-ceo-info" style={{backgroundColor: '#2F2F2F'}}>
               <h3>Jaehyung James Lee</h3>
               <div className="about-ceo-divider"></div>
               <p className="about-ceo-role"><span className="phd-badge">PhD</span> Co Founder and CEO</p>
