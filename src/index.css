@@ -67,3 +67,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.favicon {
+  width: 100%;
+  height: 100%;
+  background-color: #5f1212;
+}
+

@@ -918,3 +918,9 @@ button[type="submit"]:hover {
     font-size: clamp(1rem, 8vw, 1.6rem);
   }
 }
+
+@media (min-width: 1200px) {
+  .menu-overlay-close {
+    margin-right: 60px;
+  }
+}
