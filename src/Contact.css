@@ -571,3 +571,9 @@
     margin: 0 auto 100px auto !important;
   }
 } 
+
+@media (min-width: 900px) {
+  .contact-form-title {
+    margin-top: 12rem !important;
+  }
+} 

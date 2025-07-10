@@ -843,3 +843,8 @@ button[type="submit"]:hover {
     max-width: 50%;
   }
 } 
+
+/* Remove pointer cursor from partner logos */
+.partner.slide .box img {
+  cursor: default !important;
+} 
