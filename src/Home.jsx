@@ -193,7 +193,7 @@ function Home() {
       {/* Contact Section */}
       <section className="contact">
         <div className="contact-info">
-          <h2>Contact us</h2>
+          <h2 className="contact-form-title">Contact us</h2>
           <div classname="us">US Office.</div>
           <div classname="us-address">2211 Fortune Drive, Suite A, San Jose, CA 95131</div>
           <div classname="kr">KR Office.</div>
@@ -229,7 +229,7 @@ function Home() {
           >
             <div className="custom-dropdown-selected">
               {formData.service}
-              <span className="custom-dropdown-arrow">{dropdownOpen ? '▲' : '▼'}</span>
+              <span className="custom-dropdown-arrow"><img src="/img/Arrow Drop Down.svg" alt="Arrow" className="arrow" /></span>
             </div>
             {dropdownOpen && (
               <ul className="custom-dropdown-list" role="listbox">
