@@ -442,7 +442,10 @@
   .contact-form-title {
     font-size: 1.6rem !important;
     margin-bottom: 1rem;
-    text-align: center !important;
+    text-align: left !important;
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100%;
   }
   .contact-info-label {
@@ -486,6 +489,10 @@
   .contact-form-title {
     font-size: 1.3rem !important;
     margin-bottom: 1rem;
+    text-align: left !important;
+    position: sticky;
+    top: 0;
+    left: 0;
   }
   .contact-info-label {
     font-size: 0.95rem;
@@ -522,6 +529,10 @@
   .contact-form-title {
     font-size: 1.2rem !important;
     margin-bottom: 0.7rem;
+    text-align: left !important;
+    position: sticky;
+    top: 0;
+    left: 0;
   }
   .contact-info-label {
     font-size: 0.8rem;
@@ -574,6 +585,57 @@
 
 @media (min-width: 900px) {
   .contact-form-title {
-    margin-top: 12rem !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    
   }
+} 
+@media (min-width: 1100px) {
+  .contact-form-title {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    
+  }
+} 
+
+/* ------------------------------------------------------------------ */
+/* Ensure the contact title is always left-aligned & sticky */
+.contact-form-title {
+  text-align: left !important;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: inherit; /* keep existing background */
+  z-index: 2; /* sit above form elements */
+} 
+
+/* ------------------------------------------------------------------ */
+/* Small-screen override: keep title left but static */
+@media (max-width: 600px) {
+  .contact-form-title {
+    position: static !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 400px) {
+  .contact-form-title {
+    position: static !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 374px) {
+  .contact-form-title {
+    position: static !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+} 
+
+/* Final override ensuring left alignment regardless of earlier rules */
+.contact-form-title {
+  width: fit-content !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 } 

@@ -850,6 +850,41 @@ button[type="submit"]:hover {
 } 
 
 /* ------------------------------------------------------------------ */
+/* Override: keep contact title left-aligned & sticky on every screen */
+.contact-form-title {
+  text-align: left !important;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: inherit;
+  z-index: 2;
+}
+
+/* ------------------------------------------------------------------ */
+/* Small-screen override: title left static */
+@media (max-width: 600px) {
+  .contact-form-title {
+    position: static !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 400px) {
+  .contact-form-title {
+    position: static !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 374px) {
+  .contact-form-title {
+    position: static !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /* Mobile tweaks: left-align product content on small screens */
 @media (max-width: 600px) {
   .product-overlay {
@@ -893,4 +928,11 @@ button[type="submit"]:hover {
   .product-detail {
     text-align: left;
   }
+} 
+
+/* Final override ensuring left alignment */
+.contact-form-title {
+  width: fit-content !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 } 
