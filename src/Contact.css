@@ -538,3 +538,28 @@
     font-size: 0.85rem;
   }
 } 
+
+/* --- Desktop 50/50 contact layout --- */
+@media (min-width: 900px) {
+  .contact-form-section {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3vw;
+  }
+
+  .contact-info,
+  .contact-form-wrapper {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+} 
+
+@media (min-width: 900px) {
+  .contact-form-section {
+    max-width: 1400px !important;
+    padding: 3rem 6vw !important;
+    margin: 0 auto 100px auto !important;
+  }
+} 

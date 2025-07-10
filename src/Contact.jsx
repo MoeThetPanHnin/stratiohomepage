@@ -33,10 +33,6 @@ function Contact() {
     };
   }, [dropdownOpen]);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -46,10 +42,20 @@ function Contact() {
     setDropdownOpen(false);
   };
 
+  const handleDropdownKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      setDropdownOpen((open) => !open);
+      e.preventDefault();
+    } else if (e.key === 'Escape') {
+      setDropdownOpen(false);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Form submitted');
   };
+
 
   return (
     <div className="contact-root">
@@ -98,134 +104,72 @@ function Contact() {
           </div>
         </div>
       </div>
+      
+    
+     {/* Contact Section */}
+     <section className="contact">
+     <div className="contact-info">
+       <h2 className="contact-form-title">Contact us</h2>
+       
+       <div classname="mail">Mail.</div>
+       <div classname="mail-address">contact@stratiotechnolgy.com</div>
+     </div>
+     <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
+       <div className="form-group">
+         <div style={{ flex: 1 }}>
+           <label className="required" htmlFor="company">Company</label>
+           <input id="company" name="company" value={formData.company} onChange={handleChange} required />
+         </div>
+         <div style={{ flex: 1 }}>
+           <label className="required" htmlFor="name">Name</label>
+           <input id="name" name="name" value={formData.name} onChange={handleChange} required />
+         </div>
+       </div>
+       <label className="required" htmlFor="email">E-mail</label>
+       <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required />
+       <label className="required" htmlFor="service">Product & Service</label>
+       {/* Custom Dropdown Start */}
+       <div
+         className={`custom-dropdown${dropdownOpen ? ' open' : ''}`}
+         ref={dropdownRef}
+         tabIndex={0}
+         onClick={() => setDropdownOpen((open) => !open)}
+         onKeyDown={handleDropdownKeyDown}
+         aria-haspopup="listbox"
+         aria-expanded={dropdownOpen}
+         role="button"
+         style={{ outline: 'none' }}
+       >
+         <div className="custom-dropdown-selected">
+           {formData.service}
+           <span className="custom-dropdown-arrow"><img src="/img/Arrow Drop Down.svg" alt="Arrow" className="arrow" /></span>
+         </div>
+         {dropdownOpen && (
+           <ul className="custom-dropdown-list" role="listbox">
+             {serviceOptions.map((option) => (
+               <li
+                 key={option}
+                 className={`custom-dropdown-option${formData.service === option ? ' selected' : ''}`}
+                 onClick={(e) => { e.stopPropagation(); handleDropdownSelect(option); }}
+                 role="option"
+                 aria-selected={formData.service === option}
+                 tabIndex={-1}
+               >
+                 {option}
+               </li>
+             ))}
+           </ul>
+         )}
+       </div>
+       {/* Custom Dropdown End */}
+       <label htmlFor="message">Message</label>
+       <textarea id="message" name="message" value={formData.message} onChange={handleChange}></textarea>
+       <button type="submit">Send</button>
+     </form>
+   </section>
+   </div>
 
-      {/* Contact Form Section */}
-      <div className="contact-form-section">
-        {/* Contact Info */}
-        <div className="contact-info">
-          <h2 className="contact-form-title">Contact us</h2>
-          <div className="contact-info-mail">
-            <p className="contact-info-label">Mail.</p>
-            <p className="contact-info-email">contact@stratiotechnology.com</p>
-          </div>
-        </div>
 
-        {/* Contact Form */}
-        <div className="contact-form-wrapper">
-          <form onSubmit={handleSubmit} className="contact-form">
-            <div className="contact-form-row">
-              <div className="contact-form-field">
-                <label className="contact-form-label">
-                  Company<span className="contact-form-required">*</span>
-                </label>
-                <input
-                  name="company"
-                  value={formData.company}
-                  onChange={handleChange}
-                  required
-                  className="contact-form-input"
-                />
-              </div>
-              <div className="contact-form-field">
-                <label className="contact-form-label">
-                  Name<span className="contact-form-required">*</span>
-                </label>
-                <input
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="contact-form-input"
-                />
-              </div>
-            </div>
-
-            <div className="contact-form-field">
-              <label className="contact-form-label">
-                E-mail<span className="contact-form-required">*</span>
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="contact-form-input"
-              />
-            </div>
-
-            <div className="contact-form-field">
-              <label className="contact-form-label">
-                Product & Service<span className="contact-form-required">*</span>
-              </label>
-              {/* Custom Dropdown Start */}
-              <div
-                className={`custom-dropdown${dropdownOpen ? ' open' : ''}`}
-                ref={dropdownRef}
-                tabIndex={0}
-                onClick={() => setDropdownOpen((open) => !open)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    setDropdownOpen((open) => !open);
-                    e.preventDefault();
-                  } else if (e.key === 'Escape') {
-                    setDropdownOpen(false);
-                  }
-                }}
-                aria-haspopup="listbox"
-                aria-expanded={dropdownOpen}
-                role="button"
-                style={{ outline: 'none' }}
-              >
-                <div className="custom-dropdown-selected">
-                  {formData.service}
-                  <span className="custom-dropdown-arrow">{dropdownOpen ? '▲' : '▼'}</span>
-                </div>
-                {dropdownOpen && (
-                  <ul className="custom-dropdown-list" role="listbox">
-                    {serviceOptions.map((option) => (
-                      <li
-                        key={option}
-                        className={`custom-dropdown-option${formData.service === option ? ' selected' : ''}`}
-                        onClick={(e) => { e.stopPropagation(); handleDropdownSelect(option); }}
-                        role="option"
-                        aria-selected={formData.service === option}
-                        tabIndex={-1}
-                      >
-                        {option}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-              {/* Custom Dropdown End */}
-            </div>
-
-            <div className="contact-form-field">
-              <label className="contact-form-label">
-                Message
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows={5}
-                className="contact-form-textarea"
-              />
-            </div>
-
-            <div className="contact-form-submit-row">
-              <button
-                type="submit"
-                className="contact-form-submit-btn"
-              >
-                Send
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
   );
 }
 
