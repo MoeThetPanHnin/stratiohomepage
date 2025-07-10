@@ -946,3 +946,15 @@ button[type="submit"]:hover {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 900px) {
+  .social-icons {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    width: 160px !important;
+  }
+}

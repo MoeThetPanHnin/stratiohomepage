@@ -609,3 +609,24 @@
 .crew-card-role, .employee-card .crew-card-role, .advisor-card .crew-card-role, .board-members-card .crew-card-role {
   font-size: 14px !important; /* unified */
 }
+
+@media (max-width: 900px) {
+  .ourcrew-section-title {
+    font-size: 32px !important;
+  }
+}
+@media (max-width: 600px) {
+  .ourcrew-section-title {
+    font-size: 28px !important;
+  }
+}
+@media (max-width: 400px) {
+  .ourcrew-section-title {
+    font-size: 24px !important;
+  }
+}
+@media (max-width: 374px) {
+  .ourcrew-section-title {
+    font-size: 22px !important;
+  }
+}

@@ -201,6 +201,9 @@
   .product-btn-text {
     font-size: 1.1rem;
   }
+  .product-logo {
+    margin-top: 1rem !important;
+  }
 }
 
 /* Mobile styles */
@@ -229,6 +232,7 @@
     max-height: 40px;
     margin: 0 auto 1.5rem auto;
     display: block;
+    margin-top: 0.8rem !important;
   }
   
   .product-highlight {
@@ -277,6 +281,7 @@
     max-width: 120px;
     max-height: 30px;
     margin-bottom: 1rem;
+    margin-top: 0.6rem !important;
   }
   
   .product-highlight {
@@ -320,6 +325,7 @@
     max-width: 100px;
     max-height: 25px;
     margin-bottom: 0.8rem;
+    margin-top: 0.5rem !important;
   }
   
   .product-highlight {
