@@ -600,3 +600,12 @@
 .board-member-section .employee-cards {
   justify-content: center;
 }
+
+/* === Consistent Typography Across Card Types === */
+.crew-card-name, .employee-card .crew-card-name, .advisor-card .crew-card-name, .board-members-card .crew-card-name {
+  font-size: 20px !important; /* unified */
+}
+
+.crew-card-role, .employee-card .crew-card-role, .advisor-card .crew-card-role, .board-members-card .crew-card-role {
+  font-size: 14px !important; /* unified */
+}

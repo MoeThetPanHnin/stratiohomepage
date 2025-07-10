@@ -159,6 +159,15 @@
   }
 }
 
+@media (min-width: 1024px) {
+  /* Force exact 50/50 split between text and image on large screens */
+  .product-content,
+  .product-bg {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
 /* Tablet styles */
 @media (max-width: 900px) {
   .products-services-root {
