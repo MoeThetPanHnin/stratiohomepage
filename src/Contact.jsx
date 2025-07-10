@@ -75,7 +75,7 @@ function Contact() {
             </div>
             <a className="office-card-map" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
               <span style={{marginRight: 'auto'}}>Map</span>
-              <img src="/contact/Arrow Outward.svg" alt="Arrow" className="office-card-arrow" />
+              <span className="news-card-link"><img src="/contact/Arrow Outward.svg" alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
             </a>
           </div>
         </div>
@@ -93,7 +93,7 @@ function Contact() {
             
             <a className="office-card-map" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
               <span style={{marginRight: 'auto'}}>Map</span>
-              <img src="/contact/Arrow Outward.svg" alt="Arrow" className="office-card-arrow" />
+              <span className="news-card-link"><img src="/contact/Arrow Outward.svg" alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
             </a>
           </div>
         </div>

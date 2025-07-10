@@ -70,7 +70,7 @@
 }
 
 .office-card-content {
-  background: #333;
+  background: #2F2F2F;
   padding: 0 0 0 0;
   display: flex;
   flex-direction: column;
@@ -102,18 +102,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #222;
+  background: #1B1B1B;
   color: #FFFFFF;
   font-size: 1rem;
   padding: 0.9rem 1.2rem;
   border-top: 1px solid #222;
   text-decoration: none;
   gap: 0.5rem;
-  transition: color 0.2s;
+  cursor: pointer;
 }
 
-.office-card-map:hover {
-  color: #D5B64C;
+/* Prevent color change on hover/focus/active */
+.office-card-map:hover,
+.office-card-map:focus,
+.office-card-map:active {
+  color: #FFFFFF;
 }
 
 .office-card-arrow {
