@@ -192,10 +192,10 @@ function News() {
     <div style={{ width: '100vw', minHeight: '100vh', background: 'black', paddingTop: 90, paddingBottom: 100 }}>
       <div style={{ maxWidth: 1400, margin: '0 auto', padding: 0 }}>
         <div style={{ textAlign: 'center', margin: '0 0 2.5rem 0', paddingTop: '3rem' }}>
-          <h2 style={{ color: '#D5B64C', fontSize: '2.5rem', fontWeight: 700, marginBottom: '2.5rem' }}>Inside STRATIO, INC.</h2>
+          <h2 style={{ color: '#D5B64C', fontSize: '2.5rem', fontWeight: 700, marginBottom: '2.5rem', marginTop: '12rem' }}>Inside STRATIO, INC.</h2>
         </div>
         {/* First 9 news cards */}
-        <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(370px, 1fr))', gap: '20px', justifyItems: 'center' }}>
+        <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(370px, 1fr))', gap: '5px', justifyItems: 'stretch' }}>
           {newsData.slice(0, 9).map((news, idx) => (
             <NewsCard key={idx} {...news} />
           ))}
@@ -214,7 +214,7 @@ function News() {
         )}
         {/* Remaining 16 news cards */}
         {showSecondSet && (
-          <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(370px, 1fr))', gap: '20px', justifyItems: 'center', marginTop: '2.5rem', marginBottom: '4rem' }}>
+          <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(370px, 1fr))', gap: '5px', justifyItems: 'stretch', marginTop: '2.5rem', marginBottom: '4rem' }}>
             {newsData.slice(9, 25).map((news, idx) => (
               <NewsCard key={9 + idx} {...news} />
             ))}

@@ -8,12 +8,10 @@ const NewsCard = ({ img, title, desc, date, url }) => (
       <h3 className="news-card-title">{title}</h3>
       <p className="news-card-desc">{desc}</p>
     </div>
-    <div className="news-card-footer">
+    <a href={url} className="news-card-footer" aria-label="Read more" target="_blank" rel="noopener noreferrer">
       <span className="news-card-date">{date}</span>
-      <a href={url} className="news-card-link" aria-label="Read more" target="_blank" rel="noopener noreferrer">
-        <span><img src="/contact/Arrow Outward.svg" alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
-      </a>
-    </div>
+      <span className="news-card-link"><img src="/contact/Arrow Outward.svg" alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
+    </a>
   </div>
 );
 
