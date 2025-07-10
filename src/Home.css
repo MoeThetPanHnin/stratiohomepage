@@ -848,3 +848,49 @@ button[type="submit"]:hover {
 .partner.slide .box img {
   cursor: default !important;
 } 
+
+/* ------------------------------------------------------------------ */
+/* Mobile tweaks: left-align product content on small screens */
+@media (max-width: 600px) {
+  .product-overlay {
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+  .product-logo {
+    margin: 0 0 1rem 0;
+  }
+  .product-desc,
+  .product-detail {
+    text-align: left;
+  }
+  .product-desc::after {
+    margin: 0.7rem 0 0 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .product-overlay {
+    align-items: flex-start;
+    padding-left: 0.7rem;
+  }
+  .product-logo {
+    margin: 0 0 0.5rem 0;
+  }
+  .product-desc,
+  .product-detail {
+    text-align: left;
+  }
+  .product-desc::after {
+    margin: 0.3rem 0 0 0;
+  }
+}
+
+@media (max-width: 374px) {
+  .product-overlay {
+    align-items: flex-start;
+  }
+  .product-desc,
+  .product-detail {
+    text-align: left;
+  }
+} 
