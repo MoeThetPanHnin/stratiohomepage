@@ -287,7 +287,7 @@
   width: 100%;
   z-index: 1;
   overflow: hidden;
-  background-image: url('/aboutimg/about_stratio.png');
+  background-image: url('./img/aboutimg/about_stratio.png');
 }
 
 /* Performance Section */

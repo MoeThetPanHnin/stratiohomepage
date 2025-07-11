@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import './About.css';
-import './OurCrew.css';
+import '../css/About.css';
+import '../css/OurCrew.css';
 
 function OurCrew() {
   useEffect(() => {
@@ -16,7 +16,7 @@ function OurCrew() {
           <div className="crew-cards">
             <div className="crew-card">
               <div className="crew-card-img-wrapper">
-                <img src="/ourcrew/james.png" alt="Jaehyung James Lee" className="crew-card-img" />
+                <img src="img/ourcrewimg/james.png" alt="Jaehyung James Lee" className="crew-card-img" />
                 <a
                   className="crew-card-linkedin-arrow"
                   href=" https://www.linkedin.com/in/jaehyung-james-lee-6b815616/"
@@ -24,7 +24,7 @@ function OurCrew() {
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <img src="/ourcrew/Arrow Outward.svg" alt="Arrow Outward" />
+                  <img src="img/ourcrewimg/Arrow Outward.svg" alt="Arrow Outward" />
                 </a>
               </div>
               <h3 className="crew-card-name">Jaehyung James Lee</h3>
@@ -48,7 +48,7 @@ function OurCrew() {
 
             <div className="crew-card">
               <div className="crew-card-img-wrapper">
-                <img src="/ourcrew/youngsik.png" alt="Youngsik Kim" className="crew-card-img" />
+                <img src="img/ourcrewimg/youngsik.png" alt="Youngsik Kim" className="crew-card-img" />
                 <a
                   className="crew-card-linkedin-arrow"
                   href=" https://www.linkedin.com/in/youngsik-kim-82847073/"
@@ -56,7 +56,7 @@ function OurCrew() {
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <img src="/ourcrew/Arrow Outward.svg" alt="Arrow Outward" />
+                  <img src="img/ourcrewimg/Arrow Outward.svg" alt="Arrow Outward" />
                 </a>
               </div>
               <h3 className="crew-card-name">Youngsik Kim</h3>
@@ -80,7 +80,7 @@ function OurCrew() {
 
             <div className="crew-card">
               <div className="crew-card-img-wrapper">
-                <img src="/ourcrew/yeul.png" alt="Yeul Na" className="crew-card-img" />
+                <img src="img/ourcrewimg/yeul.png" alt="Yeul Na" className="crew-card-img" />
                 <a
                   className="crew-card-linkedin-arrow"
                   href="https://www.linkedin.com/in/yeul-na-2007b36a/"
@@ -88,7 +88,7 @@ function OurCrew() {
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
-                   <img src="/ourcrew/Arrow Outward.svg" alt="Arrow Outward" />
+                   <img src="img/ourcrewimg/Arrow Outward.svg" alt="Arrow Outward" />
                 </a>
               </div>
               <h3 className="crew-card-name">Yeul Na</h3>
@@ -124,8 +124,8 @@ function OurCrew() {
                 VP. Operation
               </div>
               <div className="crew-card-details">
-                <img src="/ourcrew/SNUH logo_g.png" alt="Stanford University" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
-                <img src="/ourcrew/SNFLogo-2018_g.png" alt="Stanford University" style={{ height: '39px', objectFit: 'contain' }} />
+                <img src="img/ourcrewimg/SNUH logo_g.png" alt="Stanford University" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
+                <img src="img/ourcrewimg/SNFLogo-2018_g.png" alt="Stanford University" style={{ height: '39px', objectFit: 'contain' }} />
               </div>
             </div>
 
@@ -137,7 +137,7 @@ function OurCrew() {
                 Head of Software
               </div>
               <div className="crew-card-details">
-                <img src="/ourcrew/NCsoft-NEW-LOGO_2_w.ai.png" alt="Purdue University" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="img/ourcrewimg/NCsoft-NEW-LOGO_2_w.ai.png" alt="Purdue University" style={{ height: '40px', objectFit: 'contain' }} />
               </div>
             </div>
 
@@ -149,7 +149,7 @@ function OurCrew() {
                 Head of Strategy
               </div>
               <div className="crew-card-details">
-                <img src="/ourcrew/Purdue_University_Fort_Wayne_logo.svg" alt="NC Soft" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="img/ourcrewimg/Purdue_University_Fort_Wayne_logo.svg" alt="NC Soft" style={{ height: '40px', objectFit: 'contain' }} />
               </div>
             </div>
 
@@ -161,8 +161,8 @@ function OurCrew() {
                 CFO
               </div>
               <div className="crew-card-details">
-                <img src="/ourcrew/TGtrigem.svg" alt="TGtrigem" style={{ height: '29px', objectFit: 'contain', marginRight: '10px' }} />
-                <img src="/ourcrew/Qcapital_partners.png" alt="Q Capital Partners" style={{ height: '56px', objectFit: 'contain' }} />
+                <img src="img/ourcrewimg/TGtrigem.svg" alt="TGtrigem" style={{ height: '29px', objectFit: 'contain', marginRight: '10px' }} />
+                <img src="img/ourcrewimg/Qcapital_partners.png" alt="Q Capital Partners" style={{ height: '56px', objectFit: 'contain' }} />
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@ function OurCrew() {
                 Professor, Stanford Univ.
               </div>
               <div className="crew-card-details">
-                <img src="/ourcrew/stanford-university-vector-logo.svg" alt="NC Soft" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="img/ourcrewimg/stanford-university-vector-logo.svg" alt="NC Soft" style={{ height: '40px', objectFit: 'contain' }} />
               </div>
             </div>
           </div>
@@ -198,10 +198,10 @@ function OurCrew() {
                 Managing Partner, <br/> Silicon Catalyst
               </div>
               <div className="crew-card-details">
-                <img src="/ourcrew/Windener University.svg" alt="Stanford University" style={{ width: '30px', height: '40px', objectFit: 'contain', marginRight: '10px', marginLeft: '10px' }} />
-                <img src="/ourcrew/SiC_Logo.png" alt="Silicon Catalyst" style={{ width: '40px', height: '30px', objectFit: 'contain', marginRight: '10px' }} />
-                <img src="/ourcrew/Micralyne.png" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
-                <img src="/ourcrew/Exar Corporation.svg" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
+                <img src="img/ourcrewimg/Windener University.svg" alt="Stanford University" style={{ width: '30px', height: '40px', objectFit: 'contain', marginRight: '10px', marginLeft: '10px' }} />
+                <img src="img/ourcrewimg/SiC_Logo.png" alt="Silicon Catalyst" style={{ width: '40px', height: '30px', objectFit: 'contain', marginRight: '10px' }} />
+                <img src="img/ourcrewimg/Micralyne.png" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
+                <img src="img/ourcrewimg/Exar Corporation.svg" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
               </div>
             </div>
 
@@ -213,10 +213,10 @@ function OurCrew() {
                 CEO, Alertgy
               </div>
               <div className="crew-card-details">
-                <img src="/ourcrew/Alertgy.png" alt="Stanford University" style={{ width: '120px', height: '30px', objectFit: 'contain', marginRight: '10px', marginLeft: '10px' }} />
-                <img src="/ourcrew/SRI.svg" alt="Silicon Catalyst" style={{ width: '40px', height: '30px', objectFit: 'contain', marginRight: '10px' }} />
-                <img src="/ourcrew/embry riddle.svg" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
-                <img src="/ourcrew/US ARMY.svg" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
+                <img src="img/ourcrewimg/Alertgy.png" alt="Stanford University" style={{ width: '120px', height: '30px', objectFit: 'contain', marginRight: '10px', marginLeft: '10px' }} />
+                <img src="img/ourcrewimg/SRI.svg" alt="Silicon Catalyst" style={{ width: '40px', height: '30px', objectFit: 'contain', marginRight: '10px' }} />
+                <img src="img/ourcrewimg/embry riddle.svg" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
+                <img src="img/ourcrewimg/US ARMY.svg" alt="Silicon Catalyst" style={{ height: '40px', objectFit: 'contain', marginRight: '10px' }} />
               </div>
             </div>
 
@@ -228,7 +228,7 @@ function OurCrew() {
                 Professor, Oxford Univ.
               </div>
               <div className="crew-card-details">
-                <img src="/ourcrew/University_of_Oxford.svg" alt="NC Soft" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="img/ourcrewimg/University_of_Oxford.svg" alt="NC Soft" style={{ height: '40px', objectFit: 'contain' }} />
               </div>
             </div>
           </div>

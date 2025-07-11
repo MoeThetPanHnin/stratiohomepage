@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './About.css';
+import '../css/About.css';
 import { Link } from 'react-router-dom';
 
 function About() {
@@ -18,7 +18,7 @@ function About() {
           </div>
         </div>
         <div className="about-hero-bg">
-            <img src="/aboutimg/Sensor_img.png" alt="Sensor" style={{width: '100%', height: 'auto', objectFit: 'contain', display: 'block'}} />
+            <img src="./img/aboutimg/Sensor_img.png" alt="Sensor" style={{width: '100%', height: 'auto', objectFit: 'contain', display: 'block'}} />
         </div>
       </section>
 
@@ -28,21 +28,21 @@ function About() {
         <div className="about-features">
           <div className="about-feature">
             <div className="about-feature-icon">
-              <img src="/aboutimg/affordable.png" alt="Affordable" />
+              <img src="./img/aboutimg/affordable.png" alt="Affordable" />
             </div>
             <h3>Affordable</h3>
             <p>1000x lower cost</p>
           </div>
           <div className="about-feature">
             <div className="about-feature-icon">
-              <img src="/aboutimg/portable.png" alt="Portable" />
+              <img src="./img/aboutimg/portable.png" alt="Portable" />
             </div>
             <h3>Portable</h3>
             <p>No need cooler</p>
           </div>
           <div className="about-feature">
             <div className="about-feature-icon">
-              <img src="/aboutimg/environment.png" alt="Scalable" />
+              <img src="./img/aboutimg/environment.png" alt="Scalable" />
             </div>
             <h3>Scalable</h3>
             <p>Fully CMOS-compatible</p>
@@ -73,7 +73,7 @@ function About() {
           
           <div className="about-ceo-profile">
             <div className="about-ceo-image">
-              <img src="/aboutimg/img.png" alt="Jaehyung James Lee" />
+              <img src="./img/aboutimg/img.png" alt="Jaehyung James Lee" />
             </div>
             <div className="about-ceo-info" style={{backgroundColor: '#2F2F2F'}}>
               <h3>Jaehyung James Lee</h3>
@@ -89,7 +89,7 @@ function About() {
               </p>
               <div className="about-ceo-social">
                 <a href="https://www.linkedin.com/in/jaehyung-james-lee-6b815616/" target="_blank" rel="noopener noreferrer" className="linkedin-icon" aria-label="LinkedIn">
-                  <img src="/aboutimg/LinkedIn.png" alt="LinkedIn" />
+                  <img src="./img/aboutimg/LinkedIn.png" alt="LinkedIn" />
                 </a>
               </div>
             </div>

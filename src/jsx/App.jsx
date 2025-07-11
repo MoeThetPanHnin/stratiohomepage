@@ -2,13 +2,13 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import OurCrew from './OurCrew';
-import ProductsServices from './ProductsServices';
-import News from './News';
-import Contact from './Contact';
-import './App.css';
+import Home              from "./Home";
+import About             from "./About";
+import OurCrew           from "./OurCrew";
+import ProductsServices  from "./ProductsServices";
+import News              from "./News";
+import Contact           from "./Contact";
+import "../css/App.css";
 
 function AppContent() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,7 +46,7 @@ function AppContent() {
           <div className="menu-overlay">
             <div className="menu-overlay-header">
             <img 
-              src="/img/STRATIO Logo.png" 
+              src="/img/homeimg/STRATIO Logo.png" 
               alt="Stratio Logo" 
               className="menu-overlay-logo" 
               onClick={(e) => { handleLogoClick(e); setMenuOpen(false); }}
@@ -78,7 +78,7 @@ function AppContent() {
         <header className="header">
           <div className="header-left">
             <img 
-              src="/img/STRATIO Logo.png" 
+              src="/img/homeimg/STRATIO Logo.png" 
               alt="Stratio Logo" 
               className="header-logo" 
               onClick={handleLogoClick}
@@ -130,7 +130,7 @@ function AppContent() {
         <footer className="footer">
           <div className="footer-left">
             <img 
-              src="/img/STRATIO Logo.png" 
+              src="/img/homeimg/STRATIO Logo.png" 
               alt="Stratio Logo" 
               className="footer-logo" 
               style={{ cursor: 'pointer' }}
