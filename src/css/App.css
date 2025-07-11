@@ -45,6 +45,10 @@ body, html, #root, .app {
   z-index: 100;
 }
 
+.menu-overlay-header {
+  height: 90px;
+}
+
 /* Laptop */
 @media (max-width: 1024px) {
   

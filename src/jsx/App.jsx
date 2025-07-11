@@ -52,7 +52,9 @@ function AppContent() {
         {/* Menu Overlay */}
         {menuOpen && (
           <div className="menu-overlay">
+           
            <div className="menu-overlay-header">
+             <div className="header-left">
               <img 
                 src={stratio_logo} 
                 alt="Stratio Logo" 
@@ -60,11 +62,12 @@ function AppContent() {
                 onClick={(e) => { handleLogoClick(e); setMenuOpen(false); }}
                 style={{ cursor: 'pointer' }}
               />
-
+              </div>
+            <div className="header-right">
              <button className="menu-overlay-close" onClick={() => setMenuOpen(false)} aria-label="Close Menu">
               <img src={close_icon} alt="Close" />
              </button>
-
+            </div>
 
             </div>  
             <div className="menu-overlay-content">
