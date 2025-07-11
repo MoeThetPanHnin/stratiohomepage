@@ -68,7 +68,7 @@ function AppContent() {
             </div>
           )}
           <nav className="header-right">
-          <button className="menu-overlay-close" style={{ marginRight: '0px' }} onClick={() => setMenuOpen(false)} aria-label="Close Menu">
+          <button className="menu-overlay-close" style={{ marginRight: '0px',paddingRight: '0px' }} onClick={() => setMenuOpen(false)} aria-label="Close Menu">
               <img src={close_icon} alt="Close" />
               </button>
           </nav>
