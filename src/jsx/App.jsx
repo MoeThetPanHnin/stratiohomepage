@@ -52,24 +52,30 @@ function AppContent() {
         {/* Menu Overlay */}
         {menuOpen && (
           <div className="menu-overlay">
-           
-           <div className="menu-overlay-header">
-             <div className="header-left">
-              <img 
-                src={stratio_logo} 
-                alt="Stratio Logo" 
-                className="menu-overlay-logo" 
-                onClick={(e) => { handleLogoClick(e); setMenuOpen(false); }}
-                style={{ cursor: 'pointer' }}
-              />
-              </div>
-            <div className="header-right">
-             <button className="menu-overlay-close" onClick={() => setMenuOpen(false)} aria-label="Close Menu">
-              <img src={close_icon} alt="Close" />
-             </button>
+           <header className="header-overlay">
+          <div className="header-left">
+            <img 
+              src={stratio_logo} 
+              alt="Stratio Logo" 
+              className="header-logo" 
+              onClick={handleLogoClick}
+              style={{ cursor: 'pointer' }}
+            />
+          </div>
+          {pageTitle && (
+            <div className="header-center">
+              <span className="header-about-text">{pageTitle}</span>
             </div>
-
-            </div>  
+          )}
+          <nav className="header-right">
+          <button className="menu-overlay-close" style={{ marginRight: '0px' }} onClick={() => setMenuOpen(false)} aria-label="Close Menu">
+              <img src={close_icon} alt="Close" />
+              </button>
+          </nav>
+          
+        </header>
+        
+            
             <div className="menu-overlay-content">
               <Link to="/about" className="menu-overlay-link" onClick={() => setMenuOpen(false)}>About</Link>
               <Link to="/products" className="menu-overlay-link" onClick={() => setMenuOpen(false)}>Products & Services</Link>
@@ -109,7 +115,11 @@ function AppContent() {
               </div>
             </button>
           </nav>
+          
         </header>
+        
+          <hr />
+        
 
         {/* Routes */}
         <main style={{ flex: 1 }}>

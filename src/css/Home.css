@@ -1,4 +1,10 @@
 /* Home.css - Styles specific to the homepage */
+.line {
+  width: 100%;
+  height: 10px;
+  background: #752929;
+  box-sizing: border-box;
+}
 
 /* Hero Section */
 .hero {

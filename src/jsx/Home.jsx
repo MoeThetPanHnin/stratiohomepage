@@ -144,6 +144,11 @@ function Home() {
 
   return (
     <>
+      <section className="line">
+       <div className="line-content">
+        <hr />
+       </div>
+      </section>
       {/* Hero */}
       <section className="hero">
         <div className="hero-video-wrapper">
