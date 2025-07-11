@@ -9,6 +9,12 @@ import ProductsServices  from "./ProductsServices";
 import News              from "./News";
 import Contact           from "./Contact";
 import "../css/App.css";
+import stratio_logo from '../images/homeimg/STRATIO Logo.png';  
+import facebook from '../icon/facebook.svg';
+import twitter from '../icon/twitter.svg';
+import youtube from '../icon/youtube.svg';
+import linkedin from '../icon/linkedin.svg';
+import top from '../icon/Top.svg';
 
 function AppContent() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,7 +52,7 @@ function AppContent() {
           <div className="menu-overlay">
             <div className="menu-overlay-header">
             <img 
-              src="/img/homeimg/STRATIO Logo.png" 
+              src={stratio_logo} 
               alt="Stratio Logo" 
               className="menu-overlay-logo" 
               onClick={(e) => { handleLogoClick(e); setMenuOpen(false); }}
@@ -78,7 +84,7 @@ function AppContent() {
         <header className="header">
           <div className="header-left">
             <img 
-              src="/img/homeimg/STRATIO Logo.png" 
+              src={stratio_logo} 
               alt="Stratio Logo" 
               className="header-logo" 
               onClick={handleLogoClick}
@@ -130,7 +136,7 @@ function AppContent() {
         <footer className="footer">
           <div className="footer-left">
             <img 
-              src="/img/homeimg/STRATIO Logo.png" 
+              src={stratio_logo} 
               alt="Stratio Logo" 
               className="footer-logo" 
               style={{ cursor: 'pointer' }}
@@ -140,21 +146,21 @@ function AppContent() {
           <div className="footer-right">
             <div className="social-icons">
               <a href="https://www.facebook.com/LinkSquareIR" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="Facebook">
-                <img src="/icon/facebook.svg" alt="Facebook" />
+                <img src={facebook} alt="Facebook" />
               </a>
               <a href="https://x.com/LinkSquareIR" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="Threads">
-                <img src="/icon/twitter.svg" alt="Threads" />
+                <img src={twitter} alt="Threads" />
               </a>
               <a href="https://www.youtube.com/@StratioBeyonSenseLinkSquare" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="YouTube">
-                <img src="/icon/youtube.svg" alt="YouTube" />
+                <img src={youtube} alt="YouTube" />
               </a>
               <a href="https://www.linkedin.com/company/stratioinc/" target="_blank" rel="noopener noreferrer" className="icon-box" aria-label="LinkedIn">
-                <img src="/icon/linkedin.svg" alt="LinkedIn" />
+                <img src={linkedin} alt="LinkedIn" />
               </a>
             </div>
             { !menuOpen && (
               <button className="go-top-btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Go to Top">
-                <img src="/icon/Top.svg" alt="Go to Top" style={{ width: 44, height: 44 }} />
+                <img src={top} alt="Go to Top" style={{ width: 44, height: 44 }} />
               </button>
             )}
           </div>

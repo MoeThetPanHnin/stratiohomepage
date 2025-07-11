@@ -1,5 +1,6 @@
 import React from 'react';
 import './NewsCard.css';
+import arrow_outward from '../images/ourcrewimg/Arrow Outward.svg';
 
 const NewsCard = ({ img, title, desc, date, url }) => (
   <div className="news-card">
@@ -10,7 +11,7 @@ const NewsCard = ({ img, title, desc, date, url }) => (
     </div>
     <a href={url} className="news-card-footer" aria-label="Read more" target="_blank" rel="noopener noreferrer">
       <span className="news-card-date">{date}</span>
-      <span className="news-card-link"><img src="/contact/Arrow Outward.svg" alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
+      <span className="news-card-link"><img src={arrow_outward} alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
     </a>
   </div>
 );

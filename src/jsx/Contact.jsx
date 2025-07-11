@@ -1,6 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../css/App.css';
 import '../css/Contact.css';
+import worldmap from '../images/contactimg/World map.svg';
+import stratio_bk_v2 from '../images/contactimg/stratio_bk_v2.png';
+import stratiokorea_bk_v2 from '../images/contactimg/stratiokorea_bk_v2.png';
+import arrow_outward from '../images/ourcrewimg/Arrow Outward.svg'; 
+import arrow_dropdown from '../images/homeimg/Arrow Drop Down.svg';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -63,7 +68,7 @@ function Contact() {
       <div className="contact-global-network">
         <h2 className="contact-global-title">Global Network</h2>
         <div className="contact-map-wrapper">
-          <img src="img/contactimg/World map.svg" alt="World Map" className="contact-map-img" />
+          <img src={worldmap} alt="World Map" className="contact-map-img" />
         </div>
       </div>
 
@@ -72,7 +77,7 @@ function Contact() {
         {/* US Office */}
         <div className="office-card">
           <div className="office-card-img-wrapper">
-            <img src="img/contactimg/stratio_bk_v2.png" alt="STRATIO, INC." className="office-card-img" />
+            <img src={stratio_bk_v2} alt="STRATIO, INC." className="office-card-img" />
           </div>
           <div className="office-card-content">
             <div>
@@ -81,7 +86,7 @@ function Contact() {
             </div>
             <a className="office-card-map" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
               <span style={{marginRight: 'auto'}}>Map</span>
-              <span className="news-card-link"><img src="img/ourcrewimg/Arrow Outward.svg" alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
+              <span className="news-card-link"><img src={arrow_outward} alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
             </a>
           </div>
         </div>
@@ -89,7 +94,7 @@ function Contact() {
         {/* Korea Office */}
         <div className="office-card">
           <div className="office-card-img-wrapper">
-            <img src="img/contactimg/stratiokorea_bk_v2.png" alt="STRATIO KOREA" className="office-card-img" />
+            <img src={stratiokorea_bk_v2} alt="STRATIO KOREA" className="office-card-img" />
           </div>
           <div className="office-card-content">
             <div>
@@ -99,7 +104,7 @@ function Contact() {
             
             <a className="office-card-map" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
               <span style={{marginRight: 'auto'}}>Map</span>
-              <span className="news-card-link"><img src="img/ourcrewimg/Arrow Outward.svg" alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
+              <span className="news-card-link"><img src={arrow_outward} alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
             </a>
           </div>
         </div>
@@ -142,7 +147,7 @@ function Contact() {
        >
          <div className="custom-dropdown-selected">
            {formData.service}
-           <span className="custom-dropdown-arrow"><img src="/img/homeimg/Arrow Drop Down.svg" alt="Arrow" className="arrow" /></span>
+           <span className="custom-dropdown-arrow"><img src={arrow_dropdown} alt="Arrow" className="arrow" /></span>
          </div>
          {dropdownOpen && (
            <ul className="custom-dropdown-list" role="listbox">
