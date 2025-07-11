@@ -284,7 +284,7 @@ function Home() {
           <div classname="us">US Office.</div>
           <div classname="us-address" style={{marginBottom: '1.5rem'}}>2211 Fortune Drive, Suite A, San Jose, CA 95131</div>
           <div classname="kr">KR Office.</div>
-          <div classname="kr-address" style={{marginBottom: '1.5rem'}}>B-911, 43 Changrop-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do (13449)</div>
+          <div classname="kr-address" style={{marginBottom: '1.5rem'}}>B-911, 43 Changeop-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do (13449)</div>
           <div classname="mail">Mail.</div>
           <div classname="mail-address" style={{marginBottom: '1.5rem'}}>contact@stratiotechnolgy.com</div>
         </div>

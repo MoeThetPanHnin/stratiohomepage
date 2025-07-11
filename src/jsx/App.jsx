@@ -15,6 +15,8 @@ import twitter from '../icon/twitter.svg';
 import youtube from '../icon/youtube.svg';
 import linkedin from '../icon/linkedin.svg';
 import top from '../icon/Top.svg';
+import close_icon from '../images/homeimg/Close.svg';
+import menu_icon from '../images/homeimg/Dehaze.png';
 
 function AppContent() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,21 +52,21 @@ function AppContent() {
         {/* Menu Overlay */}
         {menuOpen && (
           <div className="menu-overlay">
-            <div className="menu-overlay-header">
-            <img 
-              src={stratio_logo} 
-              alt="Stratio Logo" 
-              className="menu-overlay-logo" 
-              onClick={(e) => { handleLogoClick(e); setMenuOpen(false); }}
-              style={{ cursor: 'pointer' }}
-            />
-            <button className="menu-overlay-close" onClick={() => setMenuOpen(false)} aria-label="Close Menu">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="10" y1="10" x2="30" y2="30" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                <line x1="30" y1="10" x2="10" y2="30" stroke="white" strokeWidth="3" strokeLinecap="round" />
-              </svg>
-            </button>
-            </div>
+           <div className="menu-overlay-header">
+              <img 
+                src={stratio_logo} 
+                alt="Stratio Logo" 
+                className="menu-overlay-logo" 
+                onClick={(e) => { handleLogoClick(e); setMenuOpen(false); }}
+                style={{ cursor: 'pointer' }}
+              />
+
+             <button className="menu-overlay-close" onClick={() => setMenuOpen(false)} aria-label="Close Menu">
+              <img src={close_icon} alt="Close" />
+             </button>
+
+
+            </div>  
             <div className="menu-overlay-content">
               <Link to="/about" className="menu-overlay-link" onClick={() => setMenuOpen(false)}>About</Link>
               <Link to="/products" className="menu-overlay-link" onClick={() => setMenuOpen(false)}>Products & Services</Link>
@@ -99,23 +101,9 @@ function AppContent() {
           <nav className="header-right">
             <button className="menu-btn" onClick={() => setMenuOpen(true)} aria-label="Open Menu">
               <span className="menu-text">MENU</span>
-              <span className="menu-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="white"
-                  width={32}
-                  height={32}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-              </span>
+              <div className="menu-icon" style={{ cursor: 'pointer' }}>
+                <img src={menu_icon} alt="Menu" />
+              </div>
             </button>
           </nav>
         </header>

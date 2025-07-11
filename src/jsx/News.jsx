@@ -27,7 +27,7 @@ import post22 from '../images/newsimg/[2023.01.01] post.png';
 import post23 from '../images/newsimg/[2022.12.19] post.png';
 import post24 from '../images/newsimg/[2022.11.25] post.png';
 import post25 from '../images/newsimg/[2022.11.10] post.png';
-
+  
 const newsData = [
   {
     img: post1,
