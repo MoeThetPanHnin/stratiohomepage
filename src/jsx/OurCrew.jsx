@@ -29,7 +29,7 @@ function OurCrew() {
     <div className="about">
       <div className="ourcrew-container">
         {/* Leader Group Section */}
-        <section style={{ marginBottom: '12rem' }}>
+        <section className="leader-group-section" style={{ marginBottom: '30rem' }}>
           <h2 className="ourcrew-section-title">Stanford Alumni Leader Group</h2>
           <div className="crew-cards">
             <div className="crew-card">
@@ -131,7 +131,7 @@ function OurCrew() {
         </section>
 
         {/* Key Employees Section */}
-        <section style={{ marginBottom: '12rem' }}>
+        <section className="key-employees-section" style={{ marginBottom: '20rem' }}>
           <h2 className="ourcrew-section-title">Key Employees</h2>
           <div className="employee-cards">
             <div className="employee-card">
@@ -187,7 +187,7 @@ function OurCrew() {
         </section>
 
         {/* Board Members Section */}
-        <section style={{ marginBottom: '12rem' , marginTop: '12rem'}} className="board-member-section">
+        <section className="board-member-section" style={{ marginBottom: '12rem' , marginTop: '12rem'}}>
           <h2 className="ourcrew-section-title">Board Members</h2>
           <div className="employee-cards">
             <div className="employee-card" >
@@ -205,7 +205,7 @@ function OurCrew() {
         </section>
         
         {/* Advisors Section */}
-        <section style={{ marginBottom: '12rem' }}>
+        <section className="advisor-section" style={{ marginBottom: '12rem' }}>
           <h2 className="ourcrew-section-title">Advisors</h2>
           <div className="employee-cards">
             <div className="employee-card">

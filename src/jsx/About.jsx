@@ -19,7 +19,7 @@ function About() {
       {/* Hero Section */}
       <section className="about-hero">
         <div className="about-hero-content">
-          <h1 className="about-hero-title">Ge-based SWIR Sensor</h1>
+          <h1 className="about-hero-title" style={{textAlign: 'center', marginBottom: '2rem', paddingTop: '2em'}}>Ge-based SWIR Sensor</h1>
           <div className="about-hero-description">
             <p>STRATIO is the first and only company in the world to commercialize Germanium (Ge)-based SWIR sensors <br /> using standard CMOS processes. This breakthrough delivers what InGaAs never could: high-sensitive, mass-producible, and AI-integrated SWIR sensors that are ready for real-world impact.</p>
           </div>

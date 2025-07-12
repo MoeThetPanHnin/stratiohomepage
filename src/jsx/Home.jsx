@@ -162,11 +162,12 @@ function Home() {
       <section className="products">
           <div className="product-card" style={{ backgroundImage: `url(${linksquare})` }}>
           <div className="product-overlay">
-            <img src={LinkSquarelogo} alt="LinkSquare Logo" className="product-logo" />
+            <img src={LinkSquarelogo} alt="LinkSquare Logo" className="product-logo , link-square-logo" />
+            <div className="product-underline"></div>
             <p className="product-desc">Spectral Insight in the Palm of Your Hand</p>
             <p className="product-detail">LinkSquare is a smart handheld spectrometer powered by STRATIO's Ge-based SWIR spectral sensor. It captures spectral fingerprints across 8 channels among SWIR range to analyze and identify materials in real time, from plastics and fabrics to food and pharmaceuticals</p>
-            <a href="https://linksquare.io/" className="product-btn" target="_blank" rel="noopener noreferrer">
-              <span>Web Site </span>
+            <a href="https://linksquare.io/" className="product-btn link-square-btn" target="_blank" rel="noopener noreferrer">
+              <span className="link-square-btn-text">Web Site </span>
               <img src={arrow_outward} alt="Arrow" className="arrow" />
             </a>
           </div>
@@ -175,10 +176,13 @@ function Home() {
         <div className="product-card" style={{ backgroundImage: `url(${beyonsense})` }}>
           <div className="product-overlay">
             <img src={BeyonSenselogo} alt="BeyonSense Logo" className="product-logo" />
+            <div className="product-underline">
+              
+            </div>
             <p className="product-desc">Infrared Vision, Redefined</p>
             <p className="product-detail">The only SWIR imaging solution built with STRATIO's Ge-based image sensor, a breakthrough that redefines what's possible in infrared vision. From autonomous vehicles to next-generation smartphones, BeyonSense is unlocking entirely new markets where seeing beyond visible means seeing further, safer, and smarter.</p>
             <a href="https://beyonsense.io/" className="product-btn" target="_blank" rel="noopener noreferrer">
-              <span>Web Site </span>
+              <span className="beyon-sense-btn-text">Web Site </span>
               <img src={arrow_outward} alt="Arrow" className="arrow" />
             </a>
           </div>
@@ -187,10 +191,11 @@ function Home() {
         <div className="product-card product-card-stnf" style={{ backgroundImage: `url(${stnf})` }}>
           <div className="product-overlay">
             <img src={STNFlogo} alt="STNF Logo" className="product-logo" />
+            <div className="product-underline"></div>
             <p className="product-desc">Your Idea, Our Fab</p>
             <p className="product-detail">STNF is a Lab-to-Fab Foundry that supports startups disrupting the market, research institutions, and large corporations in transitioning from R&D to the commercial foundry production.</p>
             <a href="https://stnf.io/" className="product-btn" target="_blank" rel="noopener noreferrer">
-              <span>Web Site </span>
+              <span className="stnf-btn-text">Web Site </span>
               <img src={arrow_outward} alt="Arrow" className="arrow" />
             </a>
           </div>

@@ -5,6 +5,22 @@
   padding: 90px 2rem 100px;
 }
 
+.leader-group-section {
+  padding-bottom: 20rem !important;
+}
+
+.key-employees-section {
+  padding-bottom: 20rem !important;
+}
+
+.board-member-section {
+  padding-bottom: 20rem !important;
+}
+
+.advisor-section {
+  padding-bottom: 20rem !important;
+}
+
 .ourcrew-section-title {
   font-family: 'Noto Sans KR';
   color: #D5B64C;
@@ -12,6 +28,7 @@
   font-weight: bold;
   text-align: center;
   margin: 0 0 2.5rem 0;
+  
 }
 
 .crew-cards {
@@ -25,8 +42,45 @@
 }
 
 .ourcrew-container > section {
-  margin-top: 400px !important;    /* 상단 여백 */
-  margin-bottom: 400px !important; /* 하단 여백 */
+  margin-top: 6rem !important;    /* 상단 여백 */
+  margin-bottom: 6rem !important; /* 하단 여백 */
+}
+
+/* Responsive adjustments to match About page */
+@media (min-width: 374px) and (max-width: 900px) {
+  .ourcrew-container {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+  
+  .ourcrew-container > section {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .ourcrew-container {
+    padding-top:7rem !important;
+    padding-bottom: 0rem !important;
+  }
+  
+  .ourcrew-container > section {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .ourcrew-container {
+    padding-top: 12rem !important;
+    padding-bottom: 0rem !important;
+  }
+  
+  .ourcrew-container > section {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
 }
 
 .board-member-section .employee-cards {

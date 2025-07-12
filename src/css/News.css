@@ -6,31 +6,78 @@
   margin-top: 12rem;
 }
 
+@media (min-width: 374px) and (max-width: 900px) {
+  .news-root {
+    padding-top: 0rem !important  ;
+    padding-bottom: 0rem !important  ;
+    
+  }
+
+  .news-grid {
+    padding: 0 3rem !important;
+    grid-template-columns: 1fr !important;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+    
+    
+  }
+
+  .news-card {
+    margin-bottom: 2rem !important;
+  }
+
+  
+
+}
+
+/* Desktop screens - 3 cards per row */
+@media (min-width: 901px) {
+  .news-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
+    padding: 0 2rem !important;
+  }
+}
+
 @media (max-width: 900px) {
   .news-page-title {
     font-size: 2rem;
     margin-left: 5vw;
     margin-right: 5vw;
   }
+  
+  .news-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
+
 @media (max-width: 600px) {
   .news-page-title {
     font-size: 1.7rem;
     margin-left: 4vw;
     margin-right: 4vw;
   }
+  
+  .news-grid {
+    padding: 0 1rem !important;
+  }
 }
+
 @media (max-width: 400px) {
   .news-page-title {
     font-size: 1.4rem;
     margin-left: 3vw;
     margin-right: 3vw;
   }
+  
 }
+
 @media (max-width: 374px) {
   .news-page-title {
     font-size: 1.3rem;
     margin-left: 3vw;
     margin-right: 3vw;
   }
+  
 } 
+

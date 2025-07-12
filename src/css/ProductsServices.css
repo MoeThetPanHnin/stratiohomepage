@@ -138,6 +138,22 @@
   color: #000 !important;
 }
 
+@media (min-width: 374px) and (max-width: 900px) {
+
+  .product-content{
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .product-logo{
+    padding-top: 5rem !important;
+  }
+
+  .product-btn{
+    padding-bottom: 0.5rem !important;
+  }
+}
+
 /* Desktop styles */
 @media (min-width: 768px) {
   .product-section {

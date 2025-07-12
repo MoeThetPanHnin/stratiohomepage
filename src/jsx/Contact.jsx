@@ -66,7 +66,9 @@ function Contact() {
     <div className="contact-root">
       {/* Global Network Section */}
       <div className="contact-global-network">
-        <h2 className="contact-global-title">Global Network</h2>
+      <div  className="contact-global-title" >
+          <h2 className="news-page-title">Global Network</h2>
+        </div>
         <div className="contact-map-wrapper">
           <img src={worldmap} alt="World Map" className="contact-map-img" />
         </div>
