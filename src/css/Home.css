@@ -568,6 +568,20 @@
     margin-right: 1rem !important;
     
   }
+  .product-btn:hover {
+    background-color: #fff !important;
+    color: #181818 !important;
+  }
+  .product-card:hover .product-btn {
+    background-color: #fff !important;
+    color: #181818 !important;
+  }
+
+  .product-card:hover .product-btn .arrow {
+    filter: invert(1) !important;
+  }
+
+
 
   .link-square-btn {
     margin-top: 1rem !important;
