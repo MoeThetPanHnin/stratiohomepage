@@ -97,6 +97,24 @@ function Home() {
     message: '',
   });
 
+  // Video ref
+  const videoRef = useRef(null);
+
+
+  // Unmute video after page loads
+  useEffect(() => {
+    const enableSound = () => {
+      const video = videoRef.current;
+      if (video) {
+        video.muted = false;
+        video.play();
+        window.removeEventListener('click', enableSound);
+      }
+    };
+  
+    window.addEventListener('click', enableSound);
+  }, []);
+
   // Custom Dropdown State
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -152,7 +170,7 @@ function Home() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-video-wrapper">
-          <video className="hero-video" autoPlay muted playsInline>
+          <video className="hero-video" autoPlay muted playsInline ref={videoRef}>
             <source src={main_video_2025_v3} type="video/mp4" />
           </video>
         </div>
