@@ -266,6 +266,8 @@
   .product-logo {
     padding-top: 0rem !important;
     padding-bottom: 1rem !important;
+    
+    
   }
   .product-underline {
     margin-top: 0.5rem !important;
@@ -530,8 +532,8 @@
     
   }
   .products .product-logo {
-    max-width: 60px;
-    max-height: 20px;
+    max-width: 120px;
+    max-height: 40px;
     margin-bottom: 0.5rem;
   }
   .products .product-desc {
