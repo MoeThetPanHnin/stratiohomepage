@@ -133,7 +133,30 @@ body, html, #root, .app {
   width: auto;
   opacity: 1;
   cursor: pointer;
+  
 }
+
+@media (min-width: 900px) {
+  .header-logo {
+    margin-left: 4rem !important;
+  }
+
+  .menu-btn {
+    margin-right: 3rem !important;
+  }
+  .menu-overlay-close{
+    margin-right: 3rem !important;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 900px) {
+  .header-logo {
+    margin-left: 0rem !important;
+  }
+
+}
+
+
 
 .header-center {
   display: flex;
