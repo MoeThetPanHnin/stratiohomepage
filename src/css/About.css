@@ -11,9 +11,6 @@
     padding-top: 0rem !important  ;
     padding-bottom: 0rem !important  ;
   }
-
-  
- 
 }
 
 /* CEO Section */
@@ -28,19 +25,19 @@
 }
 
 .about-ceo-title {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 40px;
   font-weight: bold;
-  color: #D5B64C;
+  color: #d5b64c;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .about-ceo-subtitle {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-weight: normal;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 4rem;
   max-width: 1000px;
@@ -72,7 +69,7 @@
 }
 
 .about-ceo-divider {
-  background: #D5B64C;
+  background: #d5b64c;
   margin: 1.5rem 0;
 }
 
@@ -86,16 +83,16 @@
 
 .phd-badge {
   background: none;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0.2rem 0.5rem;
   border-radius: 50px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   font-size: 20px;
 }
 
 .about-ceo-bio {
-  font-family: 'Noto Sans KR';
-  color: #D9D9D9;
+  font-family: "Noto Sans KR";
+  color: #d9d9d9;
   margin-bottom: 2rem;
 }
 
@@ -156,7 +153,7 @@
     gap: 0;
     background: #1a1a1a; /* Card background */
     border-radius: 16px; /* Rounded corners */
-    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
     margin: 2rem auto; /* Center the card */
     padding: 0;
   }
@@ -198,7 +195,7 @@
   width: 100%;
   background: #000;
   color: #fff;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   padding-top: 90px; /* Account for fixed header */
   padding-bottom: 100px; /* Account for fixed footer */
 }
@@ -269,19 +266,19 @@
 }
 
 .about-hero-title {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 40px;
   font-weight: bold;
-  color: #D5B64C;
+  color: #d5b64c;
   margin-bottom: 1rem;
   letter-spacing: 0.02em;
 }
 
 .about-hero-description {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 20px;
   line-height: 1.6;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 1200px;
   height: 87px;
   margin: 0 auto;
@@ -296,7 +293,7 @@
   aspect-ratio: 16/7;
   background-size: cover;
   background-position: center bottom;
-  
+
   margin: 0 auto;
   position: relative;
   top: 0;
@@ -305,7 +302,7 @@
   width: 100%;
   z-index: 1;
   overflow: hidden;
-  background-image: url('../images/aboutimg/about_stratio.png');
+  background-image: url("../images/aboutimg/about_stratio.png");
 }
 
 /* Performance Section */
@@ -323,12 +320,12 @@
 }
 
 .about-performance-title {
-  font-family: 'Noto Sans KR';  
+  font-family: "Noto Sans KR";
   font-size: 40px;
   font-weight: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 4rem;
-  max-width:900px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -354,7 +351,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #D5B64C;
+  color: #d5b64c;
 }
 
 .about-feature-icon img {
@@ -364,18 +361,18 @@
 }
 
 .about-feature h3 {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 20px;
   font-weight: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .about-feature p {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 20px;
   font-weight: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 1.5;
 }
 
@@ -393,28 +390,28 @@
 }
 
 .about-company-desc-text {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 20px;
   font-weight: normal;
   letter-spacing: 0px;
   line-height: 1.7;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin: 0 auto 0 auto;
-  margin-bottom: 0q;
+  margin-bottom: 0Q;
   max-width: 1268px;
   height: 87px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
-  background: rgba(0,0,0,0.15);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.15);
   padding: 1rem 1rem;
   border-radius: 8px;
 }
 
 .about-company-title {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 40px;
   font-weight: bold;
-  color: #D5B64C;
+  color: #d5b64c;
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
@@ -444,19 +441,19 @@
 }
 
 .about-ceo-title {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 40px;
   font-weight: bold;
-  color: #D5B64C;
+  color: #d5b64c;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .about-ceo-subtitle {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-weight: normal;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 4rem;
   max-width: 1000px;
@@ -511,7 +508,7 @@
 }
 
 .about-ceo-divider {
-  background: #D5B64C; /* Gold color */
+  background: #d5b64c; /* Gold color */
   margin: 1.5rem 0;
   display: block;
 }
@@ -525,12 +522,12 @@
 }
 
 .phd-badge {
-  background:none;
-  color: #FFFFFF;
+  background: none;
+  color: #ffffff;
   padding: 0.2rem 0.5rem;
   border-radius: 50px;
-  border: 1px solid #FFFFFF;
-  font-family: 'Noto Sans KR';
+  border: 1px solid #ffffff;
+  font-family: "Noto Sans KR";
   font-size: 20px;
   font-weight: normal;
   letter-spacing: 0px;
@@ -538,10 +535,10 @@
 }
 
 .about-ceo-bio {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-weight: normal;
   letter-spacing: 0px;
-  color: #D9D9D9;
+  color: #d9d9d9;
   opacity: 1;
   margin-bottom: 2rem;
   margin-top: 0;
@@ -576,14 +573,14 @@
 }
 
 .our-crew-btn {
-  width:250px;
+  width: 250px;
   height: 60px;
   background: transparent;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   color: #fff;
   padding: 1rem 2.5rem;
   border-radius: 30px;
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
@@ -593,7 +590,7 @@
 .our-crew-btn:hover {
   background: #fff;
   color: #000;
-  border:none;
+  border: none;
   transition: none;
 }
 
@@ -602,33 +599,33 @@
   .about-hero-title {
     font-size: 2.5rem;
   }
-  
+
   .about-hero-description {
     font-size: 1.1rem;
   }
-  
+
   .about-features {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
   }
-  
+
   .about-performance-title {
     font-size: 2rem;
   }
-  
+
   .about-company-title {
     font-size: 2.5rem;
   }
-  
+
   .about-ceo-title {
     font-size: 2.5rem;
   }
-  
+
   .about-ceo-info {
     padding-left: 0;
   }
-  
+
   .about-ceo-image {
     width: 250px;
     height: 300px;
@@ -643,7 +640,7 @@
 }
 
 .ourcrew-section-title {
-  color: #D5B64C;
+  color: #d5b64c;
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
@@ -663,7 +660,7 @@
   padding: 2rem 1.5rem;
   text-align: center;
   color: #fff;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -685,11 +682,11 @@
 }
 
 .crew-card-underline {
-  color: #D5B64C;
+  color: #d5b64c;
   height: 4px;
   width: 50px;
   margin: 0.5rem auto 1rem auto;
-  background: #D5B64C;
+  background: #d5b64c;
   border-radius: 2px;
 }
 
@@ -748,11 +745,11 @@
     max-width: 90%;
     padding: 2rem 1rem 0;
   }
-  
+
   .about-hero-title {
     font-size: 36px;
   }
-  
+
   .about-hero-description {
     font-size: 18px;
     height: auto;
@@ -766,11 +763,11 @@
     min-height: 60vh;
     padding: 80px 0 4rem 0;
   }
-  
+
   .about-hero-title {
     font-size: 32px;
   }
-  
+
   .about-hero-description {
     font-size: 16px;
   }
@@ -781,12 +778,12 @@
   .about-performance {
     padding: 4rem 1.5rem;
   }
-  
+
   .about-performance-title {
     font-size: 36px;
     max-width: 90%;
   }
-  
+
   .about-features {
     gap: 3rem;
   }
@@ -796,12 +793,12 @@
   .about-performance {
     padding: 3rem 1rem;
   }
-  
+
   .about-performance-title {
     font-size: 28px;
     margin-bottom: 3rem;
   }
-  
+
   .about-features {
     gap: 2rem;
   }
@@ -814,11 +811,11 @@
     max-width: 90%;
     height: auto;
   }
-  
+
   .about-company-title {
     font-size: 36px;
   }
-  
+
   .about-company-description {
     height: 800px;
   }
@@ -829,7 +826,7 @@
     font-size: 16px;
     padding: 1rem;
   }
-  
+
   .about-company-title {
     font-size: 28px;
     margin: 2rem 0;
@@ -837,7 +834,8 @@
 }
 
 /* CEO Section Media Queries */
-@media (min-width: 901px) { /* Styles for larger screens (desktop/tablet landscape) */
+@media (min-width: 901px) {
+  /* Styles for larger screens (desktop/tablet landscape) */
   .about-ceo-profile {
     flex-direction: row;
     max-width: 1100px; /* Adjusted max-width for better control */
@@ -887,7 +885,7 @@
   .about-ceo-divider {
     width: 60px;
     height: 4px;
-    background: #D5B64C;
+    background: #d5b64c;
     margin: 0 0 1.5rem 0;
     display: block;
   }
@@ -922,7 +920,7 @@
     gap: 0;
     background: #1a1a1a; /* Dark background as seen in the image */
     border-radius: 0; /* Rounded corners for the card */
-    box-shadow: 0 4px 24px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     margin: 2rem auto; /* Center the card and provide vertical spacing */
     padding: 0; /* No padding on the card itself, content handles it */
     overflow: hidden; /* Hide overflow from image */
@@ -976,7 +974,7 @@
   .about-ceo-divider {
     width: 60px;
     height: 4px;
-    background: #D5B64C; /* Gold color */
+    background: #d5b64c; /* Gold color */
     margin: 0 0 1.5rem 0;
     align-self: flex-start; /* Align the divider to the left */
   }
@@ -1180,14 +1178,14 @@
     font-size: 16px;
     padding: 0.8rem 2rem;
   }
-} 
- 
- .about-feature h3{
-  color:#FFFFFF;
- }
+}
 
-.about-feature p{
- color:#D9D9D9;
+.about-feature h3 {
+  color: #ffffff;
+}
+
+.about-feature p {
+  color: #d9d9d9;
 }
 
 @media (max-width: 900px) {

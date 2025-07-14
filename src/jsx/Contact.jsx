@@ -1,25 +1,25 @@
-import React, { useState, useRef, useEffect } from 'react';
-import '../css/App.css';
-import '../css/Contact.css';
-import worldmap from '../images/contactimg/World map.svg';
-import stratio_bk_v2 from '../images/contactimg/stratio_bk_v2.png';
-import stratiokorea_bk_v2 from '../images/contactimg/stratiokorea_bk_v2.png';
-import arrow_outward from '../images/ourcrewimg/Arrow Outward.svg'; 
-import dropdown_arrow from '../images/homeimg/Arrow Drop Down.svg';
-import dropup_arrow from '../images/homeimg/Arrow Drop Up.svg';
+import React, { useState, useRef, useEffect } from "react";
+import "../css/App.css";
+import "../css/Contact.css";
+import worldmap from "../images/contactimg/World map.svg";
+import stratio_bk_v2 from "../images/contactimg/stratio_bk_v2.png";
+import stratiokorea_bk_v2 from "../images/contactimg/stratiokorea_bk_v2.png";
+import arrow_outward from "../images/ourcrewimg/Arrow_Outward.svg";
+import dropdown_arrow from "../images/homeimg/Arrow_Drop_Down.svg";
+import dropup_arrow from "../images/homeimg/Arrow_Drop_Up.svg";
 function Contact() {
   const [formData, setFormData] = useState({
-    company: '',
-    name: '',
-    email: '',
-    service: 'LinkSquare',
-    message: '',
+    company: "",
+    name: "",
+    email: "",
+    service: "LinkSquare",
+    message: "",
   });
 
   // Custom Dropdown State
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
-  const serviceOptions = ['LinkSquare', 'BeyonSense', 'STNF'];
+  const serviceOptions = ["LinkSquare", "BeyonSense", "STNF"];
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -29,12 +29,12 @@ function Contact() {
       }
     }
     if (dropdownOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     }
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [dropdownOpen]);
 
@@ -48,25 +48,24 @@ function Contact() {
   };
 
   const handleDropdownKeyDown = (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === "Enter" || e.key === " ") {
       setDropdownOpen((open) => !open);
       e.preventDefault();
-    } else if (e.key === 'Escape') {
+    } else if (e.key === "Escape") {
       setDropdownOpen(false);
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Form submitted');
+    alert("Form submitted");
   };
-
 
   return (
     <div className="contact-root">
       {/* Global Network Section */}
       <div className="contact-global-network">
-      <div  className="contact-global-title" >
+        <div className="contact-global-title">
           <h2 className="news-page-title">Global Network</h2>
         </div>
         <div className="contact-map-wrapper">
@@ -79,16 +78,33 @@ function Contact() {
         {/* US Office */}
         <div className="office-card">
           <div className="office-card-img-wrapper">
-            <img src={stratio_bk_v2} alt="STRATIO, INC." className="office-card-img" />
+            <img
+              src={stratio_bk_v2}
+              alt="STRATIO, INC."
+              className="office-card-img"
+            />
           </div>
           <div className="office-card-content">
             <div>
               <div className="office-card-title">STRATIO, INC.</div>
-              <div className="office-card-address">2211 Fortune Drive, Suite A, San Jose, CA 95131</div>
+              <div className="office-card-address">
+                2211 Fortune Drive, Suite A, San Jose, CA 95131
+              </div>
             </div>
-            <a className="office-card-map" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
-              <span style={{marginRight: 'auto'}}>Map</span>
-              <span className="news-card-link"><img src={arrow_outward} alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
+            <a
+              className="office-card-map"
+              href="https://maps.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span style={{ marginRight: "auto" }}>Map</span>
+              <span className="news-card-link">
+                <img
+                  src={arrow_outward}
+                  alt="arrow"
+                  style={{ width: "20px", height: "20px" }}
+                />
+              </span>
             </a>
           </div>
         </div>
@@ -96,94 +112,148 @@ function Contact() {
         {/* Korea Office */}
         <div className="office-card">
           <div className="office-card-img-wrapper">
-            <img src={stratiokorea_bk_v2} alt="STRATIO KOREA" className="office-card-img" />
+            <img
+              src={stratiokorea_bk_v2}
+              alt="STRATIO KOREA"
+              className="office-card-img"
+            />
           </div>
           <div className="office-card-content">
             <div>
               <div className="office-card-title">STRATIO KOREA</div>
-              <div className="office-card-address">B-911, 43, Changeop-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do (13449)</div>
+              <div className="office-card-address">
+                B-911, 43, Changeop-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do
+                (13449)
+              </div>
             </div>
-            
-            <a className="office-card-map" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
-              <span style={{marginRight: 'auto'}}>Map</span>
-              <span className="news-card-link"><img src={arrow_outward} alt="arrow" style={{ width: '20px', height: '20px' }} /></span>
+
+            <a
+              className="office-card-map"
+              href="https://maps.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span style={{ marginRight: "auto" }}>Map</span>
+              <span className="news-card-link">
+                <img
+                  src={arrow_outward}
+                  alt="arrow"
+                  style={{ width: "20px", height: "20px" }}
+                />
+              </span>
             </a>
           </div>
         </div>
       </div>
-      
-    
-     {/* Contact Section */}
-     <section className="contact">
-     <div className="contact-info">
-       <h2 className="contact-form-title">Contact us</h2>
-       
-       <div className="mail">Mail.</div>
-       <div className="mail-address">contact@stratiotechnolgy.com</div>
-     </div>
-     <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
-       <div className="form-group">
-         <div style={{ flex: 1 }}>
-           <label className="required" htmlFor="company">Company</label>
-           <input id="company" name="company" value={formData.company} onChange={handleChange} required />
-         </div>
-         <div style={{ flex: 1 }}>
-           <label className="required" htmlFor="name">Name</label>
-           <input id="name" name="name" value={formData.name} onChange={handleChange} required />
-         </div>
-       </div>
-       <label className="required" htmlFor="email">E-mail</label>
-       <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required />
-       <label id="service-label" className="required" htmlFor="service">Product & Service</label>
-       {/* Custom Dropdown Start */}
-       <div
-         className={`custom-dropdown${dropdownOpen ? ' open' : ''}`}
-         ref={dropdownRef}
-         tabIndex={0}
-         onClick={() => setDropdownOpen((open) => !open)}
-         onKeyDown={handleDropdownKeyDown}
-         aria-haspopup="listbox"
-         aria-expanded={dropdownOpen}
-         role="button"
-         style={{ outline: 'none' }}
-       >
-         <div className="custom-dropdown-selected">
-           {formData.service}
-           <span className="custom-dropdown-arrow">
-                <img 
-                  src={dropdownOpen ? dropup_arrow : dropdown_arrow} 
-                  alt="Arrow" 
-                  className="arrow" 
+
+      {/* Contact Section */}
+      <section className="contact">
+        <div className="contact-info">
+          <h2 className="contact-form-title">Contact us</h2>
+
+          <div className="mail">Mail.</div>
+          <div className="mail-address">contact@stratiotechnolgy.com</div>
+        </div>
+        <form
+          className="contact-form"
+          onSubmit={handleSubmit}
+          autoComplete="off"
+        >
+          <div className="form-group">
+            <div style={{ flex: 1 }}>
+              <label className="required" htmlFor="company">
+                Company
+              </label>
+              <input
+                id="company"
+                name="company"
+                value={formData.company}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div style={{ flex: 1 }}>
+              <label className="required" htmlFor="name">
+                Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+          </div>
+          <label className="required" htmlFor="email">
+            E-mail
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <label id="service-label" className="required" htmlFor="service">
+            Product & Service
+          </label>
+          {/* Custom Dropdown Start */}
+          <div
+            className={`custom-dropdown${dropdownOpen ? " open" : ""}`}
+            ref={dropdownRef}
+            tabIndex={0}
+            onClick={() => setDropdownOpen((open) => !open)}
+            onKeyDown={handleDropdownKeyDown}
+            aria-haspopup="listbox"
+            aria-expanded={dropdownOpen}
+            role="button"
+            style={{ outline: "none" }}
+          >
+            <div className="custom-dropdown-selected">
+              {formData.service}
+              <span className="custom-dropdown-arrow">
+                <img
+                  src={dropdownOpen ? dropup_arrow : dropdown_arrow}
+                  alt="Arrow"
+                  className="arrow"
                 />
               </span>
-         </div>
-         {dropdownOpen && (
-           <ul className="custom-dropdown-list" role="listbox">
-             {serviceOptions.map((option) => (
-               <li
-                 key={option}
-                 className={`custom-dropdown-option${formData.service === option ? ' selected' : ''}`}
-                 onClick={(e) => { e.stopPropagation(); handleDropdownSelect(option); }}
-                 role="option"
-                 aria-selected={formData.service === option}
-                 tabIndex={-1}
-               >
-                 {option}
-               </li>
-             ))}
-           </ul>
-         )}
-       </div>
-       {/* Custom Dropdown End */}
-       <label htmlFor="message">Message</label>
-       <textarea id="message" name="message" value={formData.message} onChange={handleChange}></textarea>
-       <button type="submit">Send</button>
-     </form>
-   </section>
-   </div>
-
-
+            </div>
+            {dropdownOpen && (
+              <ul className="custom-dropdown-list" role="listbox">
+                {serviceOptions.map((option) => (
+                  <li
+                    key={option}
+                    className={`custom-dropdown-option${formData.service === option ? " selected" : ""}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleDropdownSelect(option);
+                    }}
+                    role="option"
+                    aria-selected={formData.service === option}
+                    tabIndex={-1}
+                  >
+                    {option}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          {/* Custom Dropdown End */}
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
   );
 }
 
-export default Contact; 
+export default Contact;

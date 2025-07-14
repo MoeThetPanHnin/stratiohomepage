@@ -22,13 +22,12 @@
 }
 
 .ourcrew-section-title {
-  font-family: 'Noto Sans KR';
-  color: #D5B64C;
+  font-family: "Noto Sans KR";
+  color: #d5b64c;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   margin: 0 0 2.5rem 0;
-  
 }
 
 .crew-cards {
@@ -42,7 +41,7 @@
 }
 
 .ourcrew-container > section {
-  margin-top: 6rem !important;    /* 상단 여백 */
+  margin-top: 6rem !important; /* 상단 여백 */
   margin-bottom: 6rem !important; /* 하단 여백 */
 }
 
@@ -52,7 +51,7 @@
     padding-top: 0rem !important;
     padding-bottom: 0rem !important;
   }
-  
+
   .ourcrew-container > section {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
@@ -61,10 +60,10 @@
 
 @media (max-width: 900px) {
   .ourcrew-container {
-    padding-top:7rem !important;
+    padding-top: 7rem !important;
     padding-bottom: 0rem !important;
   }
-  
+
   .ourcrew-container > section {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
@@ -76,7 +75,7 @@
     padding-top: 12rem !important;
     padding-bottom: 0rem !important;
   }
-  
+
   .ourcrew-container > section {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
@@ -84,17 +83,17 @@
 }
 
 .board-member-section .employee-cards {
-  display: flex;              /* flex 컨테이너로 유지 */
-  justify-content: flex-start;/* 좌측부터 배치 */
-  gap: 30px;                  /* 카드 간격은 필요에 따라 조절 */
-  flex-wrap: wrap;            /* 화면이 좁아지면 줄 바꿈 허용 */
+  display: flex; /* flex 컨테이너로 유지 */
+  justify-content: flex-start; /* 좌측부터 배치 */
+  gap: 30px; /* 카드 간격은 필요에 따라 조절 */
+  flex-wrap: wrap; /* 화면이 좁아지면 줄 바꿈 허용 */
 }
 
 .crew-card-details {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 @media (max-width: 1290px) {
   .crew-cards {
     grid-template-columns: repeat(3, 1fr);
@@ -123,7 +122,7 @@
 }
 
 .crew-card {
-  background: #2F2F2F;
+  background: #2f2f2f;
   padding: 1.5rem 1rem 1.5rem;
   text-align: center;
   color: #fff;
@@ -160,28 +159,28 @@
 }
 
 .crew-card-name {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 24px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0.5rem 0 0.3rem 0;
 }
 .crew-card-underline {
-  color: #D5B64C;
+  color: #d5b64c;
   height: 4px;
   width: 50px;
   margin: 0.5rem auto 1rem auto;
-  background: #D5B64C;
+  background: #d5b64c;
   border-radius: 5px;
 }
 .crew-card-role {
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
   font-size: 16px;
   margin-bottom: 0.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .crew-card-degree {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 50px;
   padding: 0.2em 0.6em;
   font-weight: 600;
@@ -195,8 +194,8 @@
   gap: 0.3rem;
   width: 100%;
   font-size: 12px;
-  font-family: 'Noto Sans KR';
-  color: #D9D9D9;
+  font-family: "Noto Sans KR";
+  color: #d9d9d9;
   margin-top: 0.8rem;
   text-align: left;
   align-items: flex-start;
@@ -253,7 +252,8 @@
   transition: filter 0.2s;
 }
 
-.employee-cards, .advisor-cards {
+.employee-cards,
+.advisor-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -264,12 +264,15 @@
   justify-items: center;
 }
 
-.employee-cards > *, .advisor-cards > * {
+.employee-cards > *,
+.advisor-cards > * {
   justify-self: center;
 }
 
-.employee-card, .advisor-card, .board-members-card {
-  background: #2F2F2F;
+.employee-card,
+.advisor-card,
+.board-members-card {
+  background: #2f2f2f;
   padding: 1.5rem 1rem 1.5rem;
   text-align: center;
   color: #fff;
@@ -286,7 +289,9 @@
 }
 
 /* Image wrapper for employee, advisor, and board member cards */
-.employee-card-img-wrapper, .advisor-card-img-wrapper, .board-members-card-img-wrapper {
+.employee-card-img-wrapper,
+.advisor-card-img-wrapper,
+.board-members-card-img-wrapper {
   position: relative;
   width: 140px;
   height: 140px;
@@ -296,7 +301,9 @@
   margin-bottom: 1rem;
 }
 
-.employee-card-img, .advisor-card-img, .board-members-card-img {
+.employee-card-img,
+.advisor-card-img,
+.board-members-card-img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -310,7 +317,9 @@
 }
 
 /* LinkedIn arrow hover effect for all card types */
-.employee-card-linkedin-arrow, .advisor-card-linkedin-arrow, .board-members-card-linkedin-arrow {
+.employee-card-linkedin-arrow,
+.advisor-card-linkedin-arrow,
+.board-members-card-linkedin-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,22 +341,22 @@
   opacity: 1;
 }
 
-.employee-card-linkedin-arrow img, 
-.advisor-card-linkedin-arrow img, 
+.employee-card-linkedin-arrow img,
+.advisor-card-linkedin-arrow img,
 .board-members-card-linkedin-arrow img {
   width: 36px;
   height: 36px;
   filter: brightness(0.5) invert(1);
 }
 
-.employee-card-linkedin-arrow:hover, 
-.advisor-card-linkedin-arrow:hover, 
+.employee-card-linkedin-arrow:hover,
+.advisor-card-linkedin-arrow:hover,
 .board-members-card-linkedin-arrow:hover {
   background: transparent;
 }
 
-.employee-card-linkedin-arrow:hover img, 
-.advisor-card-linkedin-arrow:hover img, 
+.employee-card-linkedin-arrow:hover img,
+.advisor-card-linkedin-arrow:hover img,
 .board-members-card-linkedin-arrow:hover img {
   filter: brightness(0) invert(1);
 }
@@ -490,7 +499,7 @@
   .advisor-card {
     max-width: 400px;
   }
-} 
+}
 
 .board-members-cards {
   display: grid;
@@ -532,11 +541,14 @@
     margin-left: auto;
     margin-right: auto;
   }
-} 
+}
 
 /* Responsive design for all card grids */
 @media (max-width: 1100px) {
-  .crew-cards, .employee-cards, .advisor-cards, .board-members-cards {
+  .crew-cards,
+  .employee-cards,
+  .advisor-cards,
+  .board-members-cards {
     grid-template-columns: repeat(2, 1fr);
     max-width: 900px;
     margin-left: auto;
@@ -545,14 +557,20 @@
 }
 
 @media (max-width: 768px) {
-  .crew-cards, .employee-cards, .advisor-cards, .board-members-cards {
+  .crew-cards,
+  .employee-cards,
+  .advisor-cards,
+  .board-members-cards {
     grid-template-columns: 1fr;
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .crew-card, .employee-card, .advisor-card, .board-members-card {
+
+  .crew-card,
+  .employee-card,
+  .advisor-card,
+  .board-members-card {
     width: 100%;
     max-width: 400px;
     margin-left: auto;
@@ -561,20 +579,29 @@
 }
 
 @media (max-width: 480px) {
-  .crew-cards, .employee-cards, .advisor-cards, .board-members-cards {
+  .crew-cards,
+  .employee-cards,
+  .advisor-cards,
+  .board-members-cards {
     gap: 20px;
     max-width: 350px;
   }
-  
-  .crew-card, .employee-card, .advisor-card, .board-members-card {
+
+  .crew-card,
+  .employee-card,
+  .advisor-card,
+  .board-members-card {
     width: 100%;
     max-width: 320px;
     padding: 1.5rem 1rem 2rem;
   }
-} 
+}
 
 @media (max-width: 400px) {
-  .crew-card, .employee-card, .advisor-card, .board-members-card {
+  .crew-card,
+  .employee-card,
+  .advisor-card,
+  .board-members-card {
     width: 100%;
     max-width: 300px;
     padding: 1rem 0.5rem 1rem;
@@ -584,14 +611,17 @@
 }
 
 @media (max-width: 374px) {
-  .crew-card, .employee-card, .advisor-card, .board-members-card {
+  .crew-card,
+  .employee-card,
+  .advisor-card,
+  .board-members-card {
     width: 100%;
     max-width: 280px;
     padding: 1rem 0.3rem 1rem;
     margin-left: 0;
     margin-right: auto;
   }
-} 
+}
 
 .board-member-cards {
   display: flex;
@@ -601,7 +631,7 @@
   gap: 30px;
   width: 100%;
   max-width: 1200px;
-  margin: 0 0 0 0 ;
+  margin: 0 0 0 0;
   justify-content: center;
   justify-items: center;
 }
@@ -612,27 +642,24 @@
   max-width: 370px;
   height: auto;
   margin-right: 0;
-  background: #2F2F2F;
+  background: #2f2f2f;
   padding: 1.5rem 1rem 1.5rem;
   text-align: center;
   color: #fff;
   display: block;
   flex-direction: column;
   align-items: center;
-  
- 
+
   border-radius: 0;
   margin-left: 0 !important;
   margin-right: 0 !important;
-
 }
-
 
 .board-members-card .crew-card-name {
   font-size: 18px;
   margin-bottom: 0.3rem;
   margin-top: 0.5rem;
-  text-align:center;
+  text-align: center;
 }
 
 .board-members-card .crew-card-role {
@@ -656,11 +683,17 @@
 }
 
 /* === Consistent Typography Across Card Types === */
-.crew-card-name, .employee-card .crew-card-name, .advisor-card .crew-card-name, .board-members-card .crew-card-name {
+.crew-card-name,
+.employee-card .crew-card-name,
+.advisor-card .crew-card-name,
+.board-members-card .crew-card-name {
   font-size: 20px !important; /* unified */
 }
 
-.crew-card-role, .employee-card .crew-card-role, .advisor-card .crew-card-role, .board-members-card .crew-card-role {
+.crew-card-role,
+.employee-card .crew-card-role,
+.advisor-card .crew-card-role,
+.board-members-card .crew-card-role {
   font-size: 14px !important; /* unified */
 }
 

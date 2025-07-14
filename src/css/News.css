@@ -1,5 +1,5 @@
 .news-page-title {
-  color: #D5B64C;
+  color: #d5b64c;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
@@ -10,7 +10,6 @@
   .news-root {
     padding-top: 0rem !important  ;
     padding-bottom: 0rem !important  ;
-    
   }
 
   .news-grid {
@@ -18,16 +17,11 @@
     grid-template-columns: 1fr !important;
     margin-left: 5vw !important;
     margin-right: 5vw !important;
-    
-    
   }
 
   .news-card {
     margin-bottom: 2rem !important;
   }
-
-  
-
 }
 
 /* Desktop screens - 3 cards per row */
@@ -45,7 +39,7 @@
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  
+
   .news-grid {
     grid-template-columns: 1fr !important;
   }
@@ -57,7 +51,7 @@
     margin-left: 4vw;
     margin-right: 4vw;
   }
-  
+
   .news-grid {
     padding: 0 1rem !important;
   }
@@ -69,7 +63,6 @@
     margin-left: 3vw;
     margin-right: 3vw;
   }
-  
 }
 
 @media (max-width: 374px) {
@@ -78,6 +71,4 @@
     margin-left: 3vw;
     margin-right: 3vw;
   }
-  
-} 
-
+}
