@@ -5,8 +5,8 @@ import worldmap from '../images/contactimg/World map.svg';
 import stratio_bk_v2 from '../images/contactimg/stratio_bk_v2.png';
 import stratiokorea_bk_v2 from '../images/contactimg/stratiokorea_bk_v2.png';
 import arrow_outward from '../images/ourcrewimg/Arrow Outward.svg'; 
-import arrow_dropdown from '../images/homeimg/Arrow Drop Down.svg';
-
+import dropdown_arrow from '../images/homeimg/Arrow Drop Down.svg';
+import dropup_arrow from '../images/homeimg/Arrow Drop Up.svg';
 function Contact() {
   const [formData, setFormData] = useState({
     company: '',
@@ -149,7 +149,13 @@ function Contact() {
        >
          <div className="custom-dropdown-selected">
            {formData.service}
-           <span className="custom-dropdown-arrow"><img src={arrow_dropdown} alt="Arrow" className="arrow" /></span>
+           <span className="custom-dropdown-arrow">
+                <img 
+                  src={dropdownOpen ? dropup_arrow : dropdown_arrow} 
+                  alt="Arrow" 
+                  className="arrow" 
+                />
+              </span>
          </div>
          {dropdownOpen && (
            <ul className="custom-dropdown-list" role="listbox">

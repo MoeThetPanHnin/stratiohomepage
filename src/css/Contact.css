@@ -275,6 +275,7 @@
   transform: translateY(-50%);
   font-size: 1.2rem;
   pointer-events: none;
+  transition: transform 0.5s;
 }
 
 .custom-dropdown.open .custom-dropdown-arrow {

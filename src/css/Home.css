@@ -525,10 +525,12 @@
 @media  (min-width: 374px) and (max-width: 600px) {
   .products {
     gap: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
   .products .product-card {
     min-height: 300px;
-    padding: 0.3rem 0.1rem;
+    padding: 0rem 0.1rem;
     border-radius: 0 !important;
     
   }
@@ -746,7 +748,7 @@ button[type="submit"]:hover {
   user-select: none;
   box-sizing: border-box;
   border: none !important;
-  transition: border 0.2s;
+  transition: border 0.2s, all 0.2s ease;
 }
 .custom-dropdown-selected {
   padding: 1.1rem 2.5rem 1.1rem 1.2rem;
@@ -765,6 +767,7 @@ button[type="submit"]:hover {
   transform: translateY(-50%);
   font-size: 1.2rem;
   pointer-events: none;
+  transition: transform 0.2s ease;
 }
 .custom-dropdown.open .custom-dropdown-arrow {
   color: #fff;

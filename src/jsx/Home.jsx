@@ -7,6 +7,7 @@ import beyonsense from '../images/homeimg/beyonsense.jpg';
 import stnf from '../images/homeimg/stnf.jpg';
 import linksquare from '../images/homeimg/linksquare.png';
 import dropdown_arrow from '../images/homeimg/Arrow Drop Down.svg';
+import dropup_arrow from '../images/homeimg/Arrow Drop Up.svg';
 import arrow_outward from '../images/ourcrewimg/Arrow Outward.svg';
 import main_video_2025_v3 from '../video/main_video_2025_v3.mp4';
 
@@ -344,7 +345,13 @@ function Home() {
           >
             <div className="custom-dropdown-selected">
               {formData.service}
-              <span className="custom-dropdown-arrow"><img src={dropdown_arrow} alt="Arrow" className="arrow" /></span>
+              <span className="custom-dropdown-arrow">
+                <img 
+                  src={dropdownOpen ? dropup_arrow : dropdown_arrow} 
+                  alt="Arrow" 
+                  className="arrow" 
+                />
+              </span>
             </div>
             {dropdownOpen && (
               <ul className="custom-dropdown-list" role="listbox">
