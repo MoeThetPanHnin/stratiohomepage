@@ -2,6 +2,7 @@ import React from 'react';
 import './NewsCard.css';
 import arrow_outward from '../images/ourcrewimg/Arrow Outward.svg';
 
+
 const NewsCard = ({ img, title, desc, date, url }) => (
   <div className="news-card">
     <div className="news-card-img-wrapper"> 

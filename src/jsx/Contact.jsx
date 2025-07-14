@@ -118,8 +118,8 @@ function Contact() {
      <div className="contact-info">
        <h2 className="contact-form-title">Contact us</h2>
        
-       <div classname="mail">Mail.</div>
-       <div classname="mail-address">contact@stratiotechnolgy.com</div>
+       <div className="mail">Mail.</div>
+       <div className="mail-address">contact@stratiotechnolgy.com</div>
      </div>
      <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
        <div className="form-group">
@@ -134,7 +134,7 @@ function Contact() {
        </div>
        <label className="required" htmlFor="email">E-mail</label>
        <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required />
-       <label className="required" htmlFor="service">Product & Service</label>
+       <label id="service-label" className="required" htmlFor="service">Product & Service</label>
        {/* Custom Dropdown Start */}
        <div
          className={`custom-dropdown${dropdownOpen ? ' open' : ''}`}

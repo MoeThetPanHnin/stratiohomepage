@@ -310,12 +310,12 @@ function Home() {
       <section className="contact">
         <div className="contact-info">
           <h2 className="contact-form-title">Contact us</h2>
-          <div classname="us">US Office.</div>
-          <div classname="us-address" style={{marginBottom: '1.5rem'}}>2211 Fortune Drive, Suite A, San Jose, CA 95131</div>
-          <div classname="kr">KR Office.</div>
-          <div classname="kr-address" style={{marginBottom: '1.5rem'}}>B-911, 43 Changeop-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do (13449)</div>
-          <div classname="mail">Mail.</div>
-          <div classname="mail-address" style={{marginBottom: '1.5rem'}}>contact@stratiotechnolgy.com</div>
+          <div className="us">US Office.</div>
+          <div className="us-address" style={{marginBottom: '1.5rem'}}>2211 Fortune Drive, Suite A, San Jose, CA 95131</div>
+          <div className="kr">KR Office.</div>
+          <div className="kr-address" style={{marginBottom: '1.5rem'}}>B-911, 43 Changeop-ro, Sujeong-gu, Seongnam-si, Gyeonggi-do (13449)</div>
+          <div className="mail">Mail.</div>
+          <div className="mail-address" style={{marginBottom: '1.5rem'}}>contact@stratiotechnolgy.com</div>
         </div>
         <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
           <div className="form-group">
@@ -330,7 +330,7 @@ function Home() {
           </div>
           <label className="required" htmlFor="email">E-mail</label>
           <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required />
-          <label className="required" htmlFor="service">Product & Service</label>
+          <label id="service-label" className="required" htmlFor="service">Product & Service</label>
           {/* Custom Dropdown Start */}
           <div
             className={`custom-dropdown${dropdownOpen ? ' open' : ''}`}

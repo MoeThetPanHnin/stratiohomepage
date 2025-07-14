@@ -251,10 +251,14 @@
   background: #222;
   color: #fff;
   cursor: pointer;
-  user-select: none;
   box-sizing: border-box;
   border: none !important;
   transition: border 0.2s;
+
+  -webkit-user-select: none; /* Safari, iOS */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+ */
+  user-select: none;         /* Standard */
 }
 
 .custom-dropdown-selected {
@@ -275,7 +279,6 @@
   transform: translateY(-50%);
   font-size: 1.2rem;
   pointer-events: none;
-  transition: transform 0.5s;
 }
 
 .custom-dropdown.open .custom-dropdown-arrow {
